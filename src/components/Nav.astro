@@ -1,0 +1,31 @@
+---
+import CellMark from './CellMark.astro';
+interface Props {
+  current?: string; // e.g. "01 — Concept"
+}
+const { current } = Astro.props;
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+
+<header class="site-nav">
+  <div class="site-nav-inner">
+    <a class="brand" href={`${base}/`}>
+      <span class="amber"><CellMark size={22} /></span>
+      <span class="brand-name">Interphase</span>
+    </a>
+    {current ? (
+      <span class="nav-current">{current}</span>
+    ) : (
+      <nav class="nav-meta">
+        <a class="nav-link" href={`${base}/01-concept`}>01 · Concept</a>
+        <a class="nav-link" href={`${base}/02-metaphor`}>02 · Metaphor</a>
+        <a class="nav-link" href={`${base}/03-product`}>03 · Product</a>
+        <a class="nav-link" href={`${base}/04-chaperone`}>04 · Chaperone</a>
+        <a class="nav-link" href={`${base}/05-organisation`}>05 · Organisation</a>
+      </nav>
+    )}
+    {current && (
+      <a class="nav-link" href={`${base}/`}>← Index</a>
+    )}
+  </div>
+</header>

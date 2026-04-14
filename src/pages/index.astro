@@ -1,0 +1,113 @@
+---
+import Base from '../layouts/Base.astro';
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+
+const decks = [
+  {
+    num: '01',
+    href: `${base}/01-concept`,
+    title: 'Concept Note',
+    desc: 'Positioning, market analysis, competitive landscape, and revenue architecture. The strategic foundation from which everything else extends.',
+    tags: ['Positioning', 'Market', 'Revenue'],
+  },
+  {
+    num: '02',
+    href: `${base}/02-metaphor`,
+    title: 'The Biological Metaphor',
+    desc: 'Why Interphase is named after a cell-cycle phase. The structural parallel between biological preparation and organisational readiness for change.',
+    tags: ['Philosophy', 'Biology', 'Concept'],
+  },
+  {
+    num: '03',
+    href: `${base}/03-product`,
+    title: 'Tech Stack & MVP',
+    desc: 'Product architecture across four biological layers, the prototype specification, and the build sequence from Nucleus to Organism.',
+    tags: ['Architecture', 'MVP', 'Roadmap'],
+  },
+  {
+    num: '04',
+    href: `${base}/04-chaperone`,
+    title: 'The Chaperone Perspective',
+    desc: 'What it means to be a Chaperone — the role, the data lens, the human layer, and what Interphase enables that no consulting engagement can.',
+    tags: ['Practitioner', 'Go-to-market'],
+  },
+  {
+    num: '05',
+    href: `${base}/05-organisation`,
+    title: 'The Organisation Perspective',
+    desc: 'How a transforming organisation adopts Interphase — the trust architecture, data governance, and what leadership actually sees on the dashboard.',
+    tags: ['Adoption', 'Trust', 'ROI'],
+  },
+];
+---
+
+<Base title="Interphase — Cultural architecture for organisations preparing to transform">
+  <!-- HERO -->
+  <section class="cover">
+    <div class="shell">
+      <p class="eyebrow cover-eyebrow">Five perspectives · One thesis</p>
+      <h1 class="display">
+        Change<br />
+        begins <em>before</em><br />
+        it shows.
+      </h1>
+      <p class="cover-sub" style="margin-top:48px;">
+        Interphase is the missing infrastructure for organisational change — the
+        preparatory environment that makes transformation possible. Five
+        presentations for investors, design partners, and collaborators, each
+        entering the thesis from a different angle.
+      </p>
+    </div>
+  </section>
+
+  <!-- PHASE RAIL -->
+  <section class="shell" style="padding-bottom:80px;">
+    <p class="label" style="margin-bottom:24px;">The biological cycle</p>
+    <div class="phase-rail">
+      <div class="phase-pill">
+        <div class="pp-num">G1</div>
+        <div class="pp-name">Growth</div>
+        <p class="pp-desc">Awareness of impending change. Early signals of readiness or resistance.</p>
+      </div>
+      <div class="phase-pill is-current">
+        <div class="pp-num">S — Interphase</div>
+        <div class="pp-name">Replication</div>
+        <p class="pp-desc">The internal blueprint is copied with fidelity. This is where Interphase operates.</p>
+      </div>
+      <div class="phase-pill">
+        <div class="pp-num">M</div>
+        <div class="pp-name">Division</div>
+        <p class="pp-desc">The visible transformation. New structures, new behaviours, genuine change.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- DECKS -->
+  <section style="border-top:1px solid var(--ink-line); padding: 80px 0 0;">
+    <div class="shell">
+      <div class="section-head" style="margin-bottom:48px;">
+        <p class="label">The presentations</p>
+        <h2>Each angle <em>complete on its own.</em></h2>
+      </div>
+    </div>
+    <div class="index-grid">
+      {decks.map((d) => (
+        <a class="card" href={d.href}>
+          <div class="c-num">{d.num}</div>
+          <span class="c-arrow">↗</span>
+          <div class="c-title">{d.title}</div>
+          <p class="c-desc">{d.desc}</p>
+          <div class="c-tags">{d.tags.map((t) => <span>{t}</span>)}</div>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <!-- TAGLINE -->
+  <section style="padding: 0;">
+    <div class="tagline-block">
+      <p class="label">Interphase</p>
+      <div class="big">change begins<br /><em>before it shows.</em></div>
+    </div>
+  </section>
+</Base>

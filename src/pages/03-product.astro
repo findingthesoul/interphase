@@ -1,0 +1,209 @@
+---
+import Base from '../layouts/Base.astro';
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+
+<Base
+  title="03 · Tech Stack & MVP — Interphase"
+  current="03 · Product"
+  prev={{ href: `${base}/02-metaphor`, num: '02', title: 'The Biological Metaphor' }}
+  next={{ href: `${base}/04-chaperone`, num: '04', title: 'The Chaperone Perspective' }}
+>
+  <section class="cover">
+    <div class="shell">
+      <p class="eyebrow cover-eyebrow">03 · Architecture · MVP · Roadmap</p>
+      <h1>Built to be<br /><em>the infrastructure,</em><br />not the app.</h1>
+      <p class="cover-sub">
+        Product architecture across four biological layers, the prototype
+        specification, and the build sequence from Nucleus outward — with
+        deliberate restraint on what gets built first.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="shell">
+      <div class="section-head">
+        <p class="label">Product architecture</p>
+        <h2>Four layers, <em>one platform</em></h2>
+      </div>
+      <div class="section-body">
+        <div class="spacer"></div>
+        <div class="prose">
+          <p class="lead">The Interphase platform maps directly onto cell biology — not as metaphor, but as structural logic. Each layer depends on the one beneath it.</p>
+
+          <div class="rows">
+            <div class="row">
+              <div class="row-num">04</div>
+              <div class="row-label">Outermost<strong>Organism</strong></div>
+              <div class="row-body">
+                <h4>Collective evolution</h4>
+                <p>The self-sustaining state. The organisation has internalised the capacity to process change without continuous external support. Chaperone involvement diminishes as internal reflective capacity grows — the goal is autonomy, not dependency. This layer is the long-term outcome, not the starting point.</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="row-num">03</div>
+              <div class="row-label">Active medium<strong>Metabolic</strong></div>
+              <div class="row-body">
+                <h4>Real-time learning deployment</h4>
+                <p>Data-driven learning modules deployed at the moment the organisation's signal indicates readiness for them. Trust-building, structural navigation, ESG literacy, succession capacity — content that arrives when the metabolic conditions are right, not on a scheduled calendar.</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="row-num">02</div>
+              <div class="row-label">Human layer<strong>Cytoplasm</strong></div>
+              <div class="row-body">
+                <h4>Chaperone-guided capacity building</h4>
+                <p>The professional services layer. Certified Chaperones read the anonymised aggregate data from the Nucleus layer, conduct human outreach, run capacity-building sessions, and feed offline conversation back into the data layer. The active medium where raw reflection is converted into structured growth.</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="row-num amber">01</div>
+              <div class="row-label">The MVP<strong class="amber">Nucleus</strong></div>
+              <div class="row-body">
+                <h4 class="amber">Individual reflection & transparency</h4>
+                <p>The private, AI-powered reflection conversation. The Question Engine asks — never validates, evaluates, or advises. Each person reflects on their direct experience of change. The data generated is entirely private at the individual level; anonymised aggregate signal flows upward to the Chaperone layer. <strong>This is the MVP layer.</strong></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="shell">
+      <div class="section-head">
+        <p class="label">The MVP</p>
+        <h2>Nucleus only.<br /><em>Everything else is post-validation.</em></h2>
+      </div>
+      <div class="section-body">
+        <div class="spacer"></div>
+        <div class="prose">
+          <p>The most important discipline in early-stage product development is knowing what not to build. For Interphase, the answer is clear: the MVP is the Nucleus layer, a working Chaperone dashboard for one practitioner, and the anonymised data flow between them.</p>
+
+          <div class="callout">
+            <h3>MVP scope</h3>
+            <h2>The Nucleus layer only — and nothing else.</h2>
+            <p>Individual reflection interface, AI question engine, and anonymised signal dashboard for a single Chaperone. Everything else is post-validation work.</p>
+            <ul>
+              <li>Mobile-first PWA (progressive web app) — iOS and Android</li>
+              <li>Real Claude API integration — multi-turn reflection via SSE streaming</li>
+              <li>Question Engine: questions only, no validation or advice, enforced at code level</li>
+              <li>Voice output: SpeechSynthesis with sentence-boundary detection, 400ms intentional pause</li>
+              <li>Blinking gold streaming cursor during AI response generation</li>
+              <li>Three-level data architecture: private / anonymised aggregate / interpreted leadership signal</li>
+              <li>Simulated Chaperone dashboard showing participation patterns and aggregate signal</li>
+              <li>Local-first data capture — reflections stored on-device, synced when connectivity allows</li>
+            </ul>
+          </div>
+
+          <p>The Metabolic layer, the Module Marketplace, the multi-lens architecture, the full Chaperone certification programme — these are all post-MVP. They depend on validated learning from the Nucleus layer working in the real world with real users. Building them before that validation is not ambition; it is noise.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="shell">
+      <div class="section-head">
+        <p class="label">Technology stack</p>
+        <h2>Built on <em>proven foundations</em></h2>
+      </div>
+      <div class="section-body">
+        <div class="spacer"></div>
+        <div class="prose">
+          <p>The stack is chosen for speed of MVP build, mobile-first delivery, real-time data, and configurability for the multi-lens architecture that follows. No bespoke infrastructure in the critical path.</p>
+
+          <div class="tiles">
+            <div class="tile"><h4>Frontend / Mobile</h4><div class="tech">React Native / Expo</div><p>Mobile-first PWA. Cross-platform iOS and Android from a single codebase.</p></div>
+            <div class="tile"><h4>Local Data</h4><div class="tech">WatermelonDB</div><p>High-performance local-first database for offline capture. Syncs when connectivity allows.</p></div>
+            <div class="tile"><h4>API Layer</h4><div class="tech">tRPC</div><p>End-to-end type-safe API. Eliminates a class of runtime errors between client and server.</p></div>
+            <div class="tile"><h4>Backend / Auth</h4><div class="tech">Supabase + PostgreSQL</div><p>Row Level Security for data isolation. Individual data is cryptographically separated at the database layer.</p></div>
+            <div class="tile"><h4>Chaperone Dashboard</h4><div class="tech">Next.js</div><p>Server-rendered dashboard. Practitioners see aggregate signal; no individual-level data accessible.</p></div>
+            <div class="tile"><h4>AI Engine</h4><div class="tech">Anthropic Claude API</div><p>SSE streaming for real-time conversation. Sentence-boundary detection triggers voice output before the full response arrives.</p></div>
+            <div class="tile"><h4>Voice</h4><div class="tech">Web SpeechSynthesis</div><p>Native browser API. Speech queue for sequential playback. No external voice service dependency in MVP.</p></div>
+            <div class="tile"><h4>Anonymisation</h4><div class="tech">Participation thresholds</div><p>Aggregate data visible only above configured threshold (minimum 5 contributors per signal). Individual attribution structurally impossible.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="shell">
+      <div class="section-head">
+        <p class="label">The Question Engine</p>
+        <h2>What the AI does <em>and does not</em> do</h2>
+      </div>
+      <div class="section-body">
+        <div class="spacer"></div>
+        <div class="prose">
+          <p>The Question Engine is the core IP. The constraint is simple and absolute: the AI asks questions. It does not validate, evaluate, advise, or praise. This is enforced at the code level — the system prompt alone is not sufficient.</p>
+
+          <div class="two-col">
+            <div class="tc-cell"><h4>Conversation style</h4><p>Short, spoken-natural phrasing. Questions are front-loaded — the interrogative word comes first. Maximum 1.5 line height. No academic or clinical register.</p></div>
+            <div class="tc-cell"><h4>What the AI never does</h4><p style="font-family:var(--mono); font-size:13px; line-height:1.7;">No validation ("great insight")<br />No advice ("you should…")<br />No evaluation ("that was good/bad")<br />No diagnosis ("this suggests you…")</p></div>
+            <div class="tc-cell"><h4>Dimensioning logic</h4><p>Questions track how many layers the person engages: personal / team / organisational / systemic. Calibration is invisible — the conversation always feels appropriately challenging.</p></div>
+            <div class="tc-cell"><h4>Differentiation logic</h4><p>Within each dimension, questions expand from low-differentiation ("how did it go?") to high-differentiation ("what interpretations of 'alignment' were present in the room?") as capacity develops.</p></div>
+            <div class="tc-cell"><h4>Streaming behaviour</h4><p style="font-family:var(--mono); font-size:13px; line-height:1.7;">SSE streaming from Claude API<br />Sentence boundary detection → SpeechSynthesis<br />400ms pause before first speech<br />Blinking gold cursor during generation</p></div>
+            <div class="tc-cell"><h4>Privacy constraint</h4><p>Individual reflections stored encrypted, client-side first. Aggregate signal generated server-side. No individual content passes to Chaperone layer under any condition.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="shell">
+      <div class="section-head">
+        <p class="label">Build timeline</p>
+        <h2>From Nucleus <em>to Organism</em></h2>
+      </div>
+      <div class="section-body">
+        <div class="spacer"></div>
+        <div class="prose">
+          <div class="rows">
+            <div class="row">
+              <div class="row-num amber">01</div>
+              <div class="row-label">Now → Month 3<strong class="amber">Active phase</strong></div>
+              <div class="row-body">
+                <h4>MVP — Nucleus + one Chaperone dashboard</h4>
+                <p>Individual reflection PWA with real Claude API, voice output, local-first data capture. Single Chaperone dashboard with simulated participation patterns. Design partner (OSCC) providing real-world reflection data and feedback on Question Engine calibration.</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="row-num">02</div>
+              <div class="row-label">Month 3 → 6<strong>Validation</strong></div>
+              <div class="row-body">
+                <h4>Validated Nucleus + Chaperone certification V1</h4>
+                <p>Question Engine refined on real data. Three paid pilot clients. Chaperone certification programme launched. Revenue from platform subscriptions and first Chaperone session fees.</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="row-num">03</div>
+              <div class="row-label">Month 6 → 12<strong>Cytoplasm</strong></div>
+              <div class="row-body">
+                <h4>Cytoplasm layer + Module Marketplace V1</h4>
+                <p>Formal Chaperone data-to-intervention workflow. First learning modules available for deployment. Revenue share model active across the practitioner network.</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="row-num">04</div>
+              <div class="row-label">Year 2<strong>Metabolic</strong></div>
+              <div class="row-body">
+                <h4>Metabolic layer + lens licensing</h4>
+                <p>Real-time module deployment triggered by organisational signal. First lens license agreement — OSCC or Soul.com. Multi-vertical configurability built into the core engine.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="pull">
+            <blockquote>"The configurability for the multi-lens strategy must be built in from day one — not retrofitted. The AI interpretive layer, the Chaperone protocol, and the data schema must be modular."</blockquote>
+            <div class="attr">Interphase — Platform Architecture Requirement</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</Base>

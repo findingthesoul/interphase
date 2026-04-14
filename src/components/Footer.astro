@@ -1,0 +1,33 @@
+---
+interface Props {
+  prev?: { href: string; num: string; title: string };
+  next?: { href: string; num: string; title: string };
+}
+const { prev, next } = Astro.props;
+const year = new Date().getFullYear();
+---
+
+<footer class="site-footer">
+  <div class="shell">
+    {(prev || next) && (
+      <div class="footer-prevnext">
+        {prev ? (
+          <a class="pn-link prev" href={prev.href}>
+            <div class="pn-label">← {prev.num} · Previous</div>
+            <div class="pn-title">{prev.title}</div>
+          </a>
+        ) : <div></div>}
+        {next ? (
+          <a class="pn-link next" href={next.href}>
+            <div class="pn-label">{next.num} · Next →</div>
+            <div class="pn-title">{next.title}</div>
+          </a>
+        ) : <div></div>}
+      </div>
+    )}
+    <div class="footer-meta">
+      <span>Interphase · {year} · Confidential</span>
+      <span class="italic" style="text-transform:none; letter-spacing:0; font-family:var(--serif); color:var(--bone-mute);">change begins before it shows</span>
+    </div>
+  </div>
+</footer>
