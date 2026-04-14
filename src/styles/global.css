@@ -5,8 +5,8 @@
 
 :root {
   /* palette — brand cream + ink (from wordmark / tagline) */
-  --paper:      #F7F3E6;   /* warm cream background */
-  --paper-soft: #EFEAD8;
+  --paper:      #EDEDED;   /* neutral light grey background */
+  --paper-soft: #E2E2E2;
   --ink:        #231F20;   /* near-black — the wordmark fill */
   --ink-soft:   #3A3532;
   --ink-mute:   rgba(35,31,32,0.58);
@@ -146,7 +146,7 @@ strong { color: var(--ink); font-weight: 600; }
   position: sticky;
   top: 0;
   z-index: 50;
-  background: rgba(247,243,230,0.82);
+  background: rgba(237,237,237,0.82);
   backdrop-filter: saturate(160%) blur(14px);
   -webkit-backdrop-filter: saturate(160%) blur(14px);
   border-bottom: 1px solid var(--rule-soft);
@@ -622,7 +622,7 @@ td .num {
 .phase-pill.is-current { background: var(--ink); }
 .phase-pill.is-current .pp-num,
 .phase-pill.is-current .pp-name { color: var(--paper); }
-.phase-pill.is-current .pp-desc { color: rgba(247,243,230,0.7); }
+.phase-pill.is-current .pp-desc { color: rgba(237,237,237,0.7); }
 
 /* index cards */
 .index-grid {
