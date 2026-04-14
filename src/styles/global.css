@@ -165,8 +165,8 @@ p.lead {
 
 strong { color: var(--ink); font-weight: 600; }
 
-/* All title-like elements run in lowercase — house style */
-p.lead,
+/* Title-like elements run in lowercase — house style
+   (intros / p.lead keep normal case for readability) */
 .card .c-title,
 .pn-link .pn-title,
 .qa-q,
