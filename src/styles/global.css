@@ -285,11 +285,10 @@ strong { color: var(--ink); font-weight: 600; }
   object-fit: contain;
 }
 .home-hero-wordmark {
-  /* 130% bigger than the previous 460 → ~598 max */
-  width: clamp(220px, 42vw, 598px);
-  /* pull left so the wordmark overlaps the right half of the mandala —
-     its left edge lands at the inner circle of the cell mark */
-  margin-left: clamp(-238px, -16vw, -90px);
+  /* 10% smaller than the previous 598 → ~538 max */
+  width: clamp(200px, 38vw, 538px);
+  /* shifted 100px right from the previous overlap — less overlap, more breathing room */
+  margin-left: clamp(-138px, -10vw, 10px);
   position: relative;
   z-index: 2;
   text-align: left;
