@@ -155,7 +155,7 @@ strong { color: var(--ink); font-weight: 600; }
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 18px var(--gutter);
+  padding: 20px var(--gutter);
   gap: 16px;
 }
 .brand {
@@ -165,7 +165,7 @@ strong { color: var(--ink); font-weight: 600; }
   flex-shrink: 0;
 }
 .brand-wordmark {
-  height: 18px;
+  height: 42px;
   width: auto;
   display: block;
 }
@@ -880,8 +880,8 @@ td .num {
 }
 
 @media (max-width: 720px) {
-  .site-nav-inner { padding: 14px var(--gutter); gap: 12px; }
-  .brand-wordmark { height: 16px; }
+  .site-nav-inner { padding: 16px var(--gutter); gap: 12px; }
+  .brand-wordmark { height: 32px; }
   .nav-meta { display: none; }
   .nav-current { font-size: 10px; letter-spacing: 0.12em; }
 }
