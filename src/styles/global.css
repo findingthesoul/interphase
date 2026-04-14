@@ -156,7 +156,7 @@ p.lead {
   font-size: var(--t-2x);
   line-height: 1.2;
   color: var(--ink);
-  font-style: italic;
+  font-style: normal;
   font-weight: 300;
   letter-spacing: -0.025em;
   margin-bottom: 1.4em;
