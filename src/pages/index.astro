@@ -6,16 +6,16 @@ const decks = [
   {
     num: '01',
     href: `${base}/01-concept`,
-    title: 'Concept Note',
-    desc: 'Positioning, market analysis, competitive landscape, and revenue architecture. The strategic foundation from which everything else extends.',
-    tags: ['Positioning', 'Market', 'Revenue'],
+    title: 'Strategic Foundation',
+    desc: 'The sharpened concept, the interface of interfaces, the market, competitive positioning, revenue architecture, and the OSCC / Soul platform strategy. The nine-part strategic backbone.',
+    tags: ['Strategy', 'Market', 'Revenue', 'Investor'],
   },
   {
     num: '02',
-    href: `${base}/02-metaphor`,
-    title: 'The Biological Metaphor',
-    desc: 'Why Interphase is named after a cell-cycle phase. The structural parallel between biological preparation and organisational readiness for change.',
-    tags: ['Philosophy', 'Biology', 'Concept'],
+    href: `${base}/02-framework`,
+    title: 'Framework, Theory & Principles',
+    desc: 'Conceptual framework (including values), theory of change, and the full set of design principles that govern architecture, product, and market positioning.',
+    tags: ['Framework', 'Theory', 'Principles'],
   },
   {
     num: '03',
@@ -42,26 +42,26 @@ const decks = [
 ---
 
 <Base title="Interphase — Cultural architecture for organisations preparing to transform">
-  <!-- HERO -->
-  <section class="cover">
-    <div class="shell">
-      <p class="eyebrow cover-eyebrow">Five perspectives · One thesis</p>
-      <h1 class="display">
-        Change<br />
-        begins <em>before</em><br />
-        it shows.
-      </h1>
-      <p class="cover-sub" style="margin-top:48px;">
-        Interphase is the missing infrastructure for organisational change — the
-        preparatory environment that makes transformation possible. Five
-        presentations for investors, design partners, and collaborators, each
-        entering the thesis from a different angle.
-      </p>
+  <!-- HERO: mandala + wordmark + tagline -->
+  <section class="home-hero">
+    <div class="home-hero-mandala">
+      <img src={`${base}/mandala.svg`} alt="" loading="eager" />
+    </div>
+    <div class="home-hero-wordmark">
+      <img src={`${base}/wordmark.svg`} alt="Interphase" />
+    </div>
+    <p class="home-hero-sub">
+      Cultural architecture for organisations preparing to transform.
+      Five perspectives on one thesis — for investors, design partners, and
+      collaborators.
+    </p>
+    <div class="home-hero-tagline">
+      <img src={`${base}/tagline.png`} alt="Change begins... before it shows." />
     </div>
   </section>
 
   <!-- PHASE RAIL -->
-  <section class="shell" style="padding-bottom:80px;">
+  <section class="shell" style="padding-bottom: clamp(56px, 8vw, 96px);">
     <p class="label" style="margin-bottom:24px;">The biological cycle</p>
     <div class="phase-rail">
       <div class="phase-pill">
@@ -83,9 +83,9 @@ const decks = [
   </section>
 
   <!-- DECKS -->
-  <section style="border-top:1px solid var(--ink-line); padding: 80px 0 0;">
+  <section style="border-top:1px solid var(--rule); padding: clamp(64px, 10vw, 120px) 0 0;">
     <div class="shell">
-      <div class="section-head" style="margin-bottom:48px;">
+      <div class="section-head" style="margin-bottom: clamp(40px, 6vw, 64px);">
         <p class="label">The presentations</p>
         <h2>Each angle <em>complete on its own.</em></h2>
       </div>
@@ -103,7 +103,7 @@ const decks = [
     </div>
   </section>
 
-  <!-- TAGLINE -->
+  <!-- TAGLINE CLOSING -->
   <section style="padding: 0;">
     <div class="tagline-block">
       <p class="label">Interphase</p>
