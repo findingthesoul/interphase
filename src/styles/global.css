@@ -193,13 +193,20 @@ p.lead,
 /* ─── Site chrome ────────────────────────────────────── */
 
 .site-nav {
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   z-index: 50;
   background: rgba(237,237,237,0.82);
   backdrop-filter: saturate(160%) blur(14px);
   -webkit-backdrop-filter: saturate(160%) blur(14px);
   border-bottom: 1px solid var(--rule-soft);
+}
+/* Reserve space under the fixed nav */
+main { padding-top: 82px; }
+@media (max-width: 720px) {
+  main { padding-top: 64px; }
 }
 .site-nav-inner {
   display: flex;
