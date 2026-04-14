@@ -1,0 +1,259 @@
+---
+import Base from '../layouts/Base.astro';
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+
+const layers = [
+  {
+    tag: 'Nucleus',
+    title: 'Individual reflection & transparency',
+    desc: 'The AI asks questions only — never validates, advises, or diagnoses. The person discovers what they already know.',
+    more: 'The Question Engine asks only what the person can answer from direct experience. Observational before evaluative. Specific before abstract. No positive reinforcement — emotional neutrality is what makes the space safe enough for honesty.',
+    active: true,
+  },
+  {
+    tag: 'Cytoplasm',
+    title: 'Chaperone-guided capacity building',
+    desc: 'Human practitioners read anonymised aggregate signal and intervene at the exact right moment.',
+    more: 'Chaperones are certified independent practitioners — coaches, OD consultants, change managers — who read the anonymised aggregate signal across a team or organisation. They do not see individual data. They see patterns, and they act on them.',
+  },
+  {
+    tag: 'Metabolic',
+    title: 'Real-time learning deployment',
+    desc: 'Targeted modules deployed when the data shows a team is ready — not on a schedule.',
+    more: 'Learning modules are not deployed on a curriculum schedule. They deploy when the data shows readiness — when a team is processing a particular friction and a targeted module would accelerate the learning. Context-triggered, not calendar-triggered.',
+  },
+  {
+    tag: 'Organism',
+    title: 'Self-sustaining collective capacity',
+    desc: 'The endgame: an organisation that no longer needs external support because it has internalised the practice.',
+    more: 'The Chaperone model is designed to diminish over time. As reflective practice becomes embedded, the organisation develops its own capacity to read and respond to its internal signals. Interphase succeeds when it makes itself less necessary.',
+  },
+];
+---
+
+<Base
+  title="00 · Executive Summary — Interphase"
+  current="00 · Executive Summary"
+  next={{ href: `${base}/01-concept`, num: '01', title: 'Strategic Foundation' }}
+>
+  <!-- 1. COVER -->
+  <section class="cover fade-section">
+    <div class="shell">
+      <p class="eyebrow cover-eyebrow">Interphase</p>
+      <h1>Change begins<br />before it shows.</h1>
+      <p class="cover-sub" style="margin-bottom: clamp(40px, 6vw, 72px);">
+        The missing infrastructure for organisations that need to absorb
+        transformation — not just manage it.
+      </p>
+
+      <div class="summary-stats">
+        <div class="summary-stat">
+          <div class="summary-stat-n">70<span>%</span></div>
+          <p class="summary-stat-l">of all organisational transformations fail</p>
+        </div>
+        <div class="summary-stat">
+          <div class="summary-stat-n">38<span>%</span></div>
+          <p class="summary-stat-l">of employees willing to support change today, down from 74% in 2016</p>
+        </div>
+        <div class="summary-stat">
+          <div class="summary-stat-n">96<span>%</span></div>
+          <p class="summary-stat-l">of organisations in active change at any given moment</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. THE DIAGNOSIS -->
+  <section class="section fade-section">
+    <div class="shell">
+      <div class="section-head">
+        <p class="label">The diagnosis</p>
+        <h2>Organisations skip <em>the preparatory phase.</em></h2>
+      </div>
+      <div class="section-body">
+        <div class="spacer"></div>
+        <div class="prose">
+          <p>In biology, a cell cannot divide without completing interphase — a period of internal growth, replication, and metabolic readiness. Rush it, and the resulting cells are fragile, mutated, or destructive.</p>
+          <p>Organisations do exactly this. They impose restructurings, M&amp;A integrations, ESG mandates, and digital rollouts without the corresponding internal preparation. The result is predictable: resistance, burnout, and failure — not because people can't change, but because they were never equipped to.</p>
+
+          <div class="pull">
+            <blockquote>"The problem isn't that people resist change. It's that organisations announce change without building the capacity to absorb it."</blockquote>
+            <div class="attr">Interphase — Core Thesis</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. THE PLATFORM -->
+  <section class="section fade-section">
+    <div class="shell">
+      <div class="section-head">
+        <p class="label">The platform</p>
+        <h2>Continuous, ambient<br /><em>cultural infrastructure.</em></h2>
+      </div>
+      <div class="section-body">
+        <div class="spacer"></div>
+        <div class="prose">
+          <p>Interphase is a four-layer platform that installs the missing preparatory environment — not as a consulting engagement, not as a survey tool, but as permanent infrastructure operating at the level of the individual.</p>
+
+          <ul class="layer-stack" role="list">
+            {layers.map((l) => (
+              <li class={`layer-item${l.active ? ' is-active' : ''}`}>
+                <button class="layer-toggle" type="button" aria-expanded="false">
+                  <span class="layer-tag">{l.tag}</span>
+                  <span class="layer-main">
+                    <span class="layer-title">{l.title}</span>
+                    <span class="layer-desc">{l.desc}</span>
+                  </span>
+                  <span class="layer-icon" aria-hidden="true">+</span>
+                </button>
+                <div class="layer-detail" hidden>
+                  <p>{l.more}</p>
+                </div>
+              </li>
+            ))}
+          </ul>
+
+          <p>The core constraint: <strong>the AI only asks questions.</strong> It never evaluates, validates, or advises. This is enforced at the code level. The result is honest data — because people who aren't being judged tell the truth.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. WHY THIS IS DIFFERENT -->
+  <section class="section fade-section">
+    <div class="shell">
+      <div class="section-head">
+        <p class="label">Why this is different</p>
+        <h2>Nothing else occupies <em>this position.</em></h2>
+      </div>
+      <div class="section-body">
+        <div class="spacer"></div>
+        <div class="prose">
+          <div class="compare">
+            <div class="compare-col">
+              <h3>What exists</h3>
+              <div class="compare-item">McKinsey / Prosci — event-based, expensive, no continuous layer</div>
+              <div class="compare-item">Culture Amp / Lattice — measure sentiment, don't build capacity</div>
+              <div class="compare-item">ServiceNow / Jira — IT change, treats humans as workflow objects</div>
+              <div class="compare-item">Coaching and wellbeing apps — individual, disconnected from transformation context</div>
+            </div>
+            <div class="compare-col us">
+              <h3>Interphase</h3>
+              <div class="compare-item">Continuous infrastructure — not a programme, not a survey</div>
+              <div class="compare-item">Builds capacity, doesn't just measure it</div>
+              <div class="compare-item">AI generates questions — preserves agency, prevents tool fatigue</div>
+              <div class="compare-item">Honest data through ethical design — the moat no one can copy</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. THE MARKET -->
+  <section class="section fade-section">
+    <div class="shell">
+      <div class="section-head">
+        <p class="label">The market</p>
+        <h2>Three converging markets.<br /><em>One underserved layer.</em></h2>
+      </div>
+      <div class="section-body">
+        <div class="spacer"></div>
+        <div class="prose">
+          <div class="tiles">
+            <div class="tile">
+              <h4>OCM Software</h4>
+              <div class="big">$4.2B</div>
+              <p>Growing to $17B by 2034. Dominated by IT-change tooling. The cultural layer is almost entirely absent.</p>
+            </div>
+            <div class="tile">
+              <h4>Employee Experience</h4>
+              <div class="big">$6.7B</div>
+              <p>Growing to $12.9B by 2035. No player focused on transformation-specific cultural infrastructure.</p>
+            </div>
+            <div class="tile">
+              <h4>Employee Engagement</h4>
+              <div class="big">$1.1B</div>
+              <p>Growing to $3.15B by 2034. Existing tools measure sentiment. Interphase builds the capacity that drives it.</p>
+            </div>
+            <div class="tile">
+              <h4>Combined TAM</h4>
+              <div class="big">~$12B</div>
+              <p>Interphase's cross-market position is defensible precisely because no current player spans all three.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. THE CLOSE -->
+  <section class="section fade-section">
+    <div class="shell">
+      <div class="section-head">
+        <p class="label">The invitation</p>
+        <h2>We are not building another HR tool.<br /><em>We are building the phase<br />organisations have been skipping.</em></h2>
+      </div>
+      <div class="section-body">
+        <div class="spacer"></div>
+        <div class="prose">
+          <p class="lead">Pre-seed stage. Design partner context live. First deployment underway.</p>
+          <p>We are speaking with a small number of investors and advisors who understand that cultural infrastructure is both the ethical and the commercial bet.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<script is:inline>
+  // Scroll-triggered fade-in on .fade-section and expandable .layer-toggle
+  (function () {
+    function init() {
+      // Fade in sections as they enter the viewport
+      var sections = document.querySelectorAll('.fade-section');
+      if (sections.length && 'IntersectionObserver' in window) {
+        sections.forEach(function (s) { s.classList.add('is-hidden'); });
+        var io = new IntersectionObserver(
+          function (entries) {
+            entries.forEach(function (entry) {
+              if (entry.isIntersecting) {
+                entry.target.classList.remove('is-hidden');
+                entry.target.classList.add('is-visible');
+                io.unobserve(entry.target);
+              }
+            });
+          },
+          { threshold: 0.1, rootMargin: '0px 0px -8% 0px' }
+        );
+        sections.forEach(function (s) { io.observe(s); });
+      }
+
+      // Expand/collapse layer stack rows
+      var toggles = document.querySelectorAll('.layer-toggle');
+      toggles.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          var expanded = btn.getAttribute('aria-expanded') === 'true';
+          btn.setAttribute('aria-expanded', expanded ? 'false' : 'true');
+          var detail = btn.nextElementSibling;
+          if (detail) {
+            if (expanded) {
+              detail.setAttribute('hidden', '');
+            } else {
+              detail.removeAttribute('hidden');
+            }
+          }
+          var item = btn.closest('.layer-item');
+          if (item) item.classList.toggle('is-open', !expanded);
+        });
+      });
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', init);
+    } else {
+      init();
+    }
+  })();
+</script>
+</Base>
