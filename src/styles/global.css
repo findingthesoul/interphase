@@ -268,9 +268,9 @@ strong { color: var(--ink); font-weight: 600; }
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: clamp(28px, 5vw, 72px);
   margin: 0 auto clamp(40px, 6vw, 64px);
   max-width: 1100px;
+  position: relative;
 }
 .home-hero-mandala {
   width: clamp(180px, 32vw, 476px);  /* 30% smaller than the previous 680 */
@@ -285,7 +285,13 @@ strong { color: var(--ink); font-weight: 600; }
   object-fit: contain;
 }
 .home-hero-wordmark {
-  max-width: min(50vw, 460px);
+  /* 130% bigger than the previous 460 → ~598 max */
+  width: clamp(220px, 42vw, 598px);
+  /* pull left so the wordmark overlaps the right half of the mandala —
+     its left edge lands at the inner circle of the cell mark */
+  margin-left: clamp(-238px, -16vw, -90px);
+  position: relative;
+  z-index: 2;
   text-align: left;
 }
 .home-hero-wordmark img {
@@ -308,17 +314,18 @@ strong { color: var(--ink); font-weight: 600; }
   height: auto;
 }
 
-/* On phones: stack the lockup vertically */
+/* On phones: stack the lockup vertically, no overlap */
 @media (max-width: 720px) {
   .home-hero-lockup {
     flex-direction: column;
-    gap: clamp(24px, 5vw, 36px);
+    gap: clamp(20px, 4vw, 32px);
   }
   .home-hero-mandala {
     width: clamp(220px, 60vw, 360px);
   }
   .home-hero-wordmark {
-    max-width: min(80vw, 420px);
+    width: min(86vw, 460px);
+    margin-left: 0;
     text-align: center;
   }
 }
