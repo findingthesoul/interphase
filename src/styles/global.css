@@ -3,6 +3,14 @@
    change begins before it shows
    ───────────────────────────────────────────────────────────── */
 
+@font-face {
+  font-family: 'Providence Sans';
+  src: url('/interphase/fonts/ProvidenceSans-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   /* palette — brand cream + ink (from wordmark / tagline) */
   --paper:      #EDEDED;   /* neutral light grey background */
@@ -20,9 +28,10 @@
   --accent:     var(--klein);
   --accent-soft: var(--klein-soft);
 
-  /* type — Helvetica Neue throughout, with a true mono for labels */
+  /* type — Helvetica Neue throughout, Providence Sans for H1, mono for labels */
   --sans:    'Helvetica Neue', Helvetica, Arial, sans-serif;
   --display: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --h1:      'Providence Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   --serif:   'Helvetica Neue', Helvetica, Arial, sans-serif; /* legacy alias */
   --mono:    'JetBrains Mono', ui-monospace, 'SFMono-Regular', Menlo, monospace;
 
@@ -112,7 +121,13 @@ h1, h2, h3, h4 {
   text-transform: lowercase;
 }
 
-h1 { font-size: var(--t-4x); line-height: 0.96; font-weight: 200; }
+h1 {
+  font-family: var(--h1);
+  font-size: var(--t-4x);
+  line-height: 1;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+}
 h2 { font-size: var(--t-4x); line-height: 1.02; font-weight: 200; }
 h3 { font-size: var(--t-2x); line-height: 1.15; font-weight: 300; }
 h4 { font-size: var(--t-1x); line-height: 1.3;  font-weight: 600; letter-spacing: -0.005em; }
