@@ -4,65 +4,60 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 ---
 
 <Base
-  title="03 · Tech Stack & MVP — Interphase"
+  title="03 · Product & Prototype — Interphase"
   current="03 · Product"
   prev={{ href: `${base}/02-framework`, num: '02', title: 'Framework, Theory & Principles' }}
-  next={{ href: `${base}/04-chaperone`, num: '04', title: 'The Chaperone Perspective' }}
+  next={{ href: `${base}/04-chaperone`, num: '04', title: 'The Chaperone Question' }}
 >
+  <!-- COVER -->
   <section class="cover">
     <div class="shell">
-      <p class="eyebrow cover-eyebrow">03 · Architecture · MVP · Roadmap</p>
-      <h1>Built to be<br /><em>the infrastructure,</em><br />not the app.</h1>
+      <p class="eyebrow cover-eyebrow">03 · Prototype · MVP · Nucleus</p>
+      <h1>The Nucleus<br />is <em>the product.</em></h1>
       <p class="cover-sub">
-        Product architecture across four biological layers, the prototype
-        specification, and the build sequence from Nucleus outward — with
-        deliberate restraint on what gets built first.
+        A working iPhone webapp that demonstrates the Interphase reflection
+        experience. The centrepiece is a real, live AI conversation — the
+        question engine powered by Claude. Everything else exists to frame and
+        contextualise that conversation.
       </p>
     </div>
   </section>
 
+  <!-- WHAT YOU ARE BUILDING -->
   <section class="section">
     <div class="shell">
       <div class="section-head">
-        <p class="label">Product architecture</p>
-        <h2>Four layers, <em>one platform</em></h2>
+        <p class="label">What we are building</p>
+        <h2>Three screens,<br /><em>one flow.</em></h2>
       </div>
       <div class="section-body">
         <div class="spacer"></div>
         <div class="prose">
-          <p class="lead">The Interphase platform maps directly onto cell biology — not as metaphor, but as structural logic. Each layer depends on the one beneath it.</p>
+          <p class="lead">The prototype must feel like a finished product. Someone should be able to hand their phone to an investor and let them experience it without explanation.</p>
 
           <div class="rows">
             <div class="row">
-              <div class="row-num">04</div>
-              <div class="row-label">Outermost<strong>Organism</strong></div>
+              <div class="row-num">01</div>
+              <div class="row-label">Entry<strong>Onboarding</strong></div>
               <div class="row-body">
-                <h4>Collective evolution</h4>
-                <p>The self-sustaining state. The organisation has internalised the capacity to process change without continuous external support. Chaperone involvement diminishes as internal reflective capacity grows — the goal is autonomy, not dependency. This layer is the long-term outcome, not the starting point.</p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="row-num">03</div>
-              <div class="row-label">Active medium<strong>Metabolic</strong></div>
-              <div class="row-body">
-                <h4>Real-time learning deployment</h4>
-                <p>Data-driven learning modules deployed at the moment the organisation's signal indicates readiness for them. Trust-building, structural navigation, ESG literacy, succession capacity — content that arrives when the metabolic conditions are right, not on a scheduled calendar.</p>
+                <h4>Two cards, under 60 seconds</h4>
+                <p>The mark and the tagline. Then the privacy commitment, in exact language: <em>"What you share here belongs to you. Your reflections are never visible to your organisation. Leadership sees patterns across teams — never individual responses. You can stop at any time."</em> No more onboarding. Straight into the Nucleus.</p>
               </div>
             </div>
             <div class="row">
               <div class="row-num">02</div>
-              <div class="row-label">Human layer<strong>Cytoplasm</strong></div>
+              <div class="row-label">The product<strong>Nucleus</strong></div>
               <div class="row-body">
-                <h4>Chaperone-guided capacity building</h4>
-                <p>The professional services layer. Certified Chaperones read the anonymised aggregate data from the Nucleus layer, conduct human outreach, run capacity-building sessions, and feed offline conversation back into the data layer. The active medium where raw reflection is converted into structured growth.</p>
+                <h4>The live reflection conversation</h4>
+                <p>A real conversation with the Claude API. The Question Engine asks questions only — never gives answers, advice, feedback, validation, or analysis. It is a mirror. Full conversation history is maintained across turns. The interaction is what the prototype exists to demonstrate.</p>
               </div>
             </div>
             <div class="row">
-              <div class="row-num amber">01</div>
-              <div class="row-label">The MVP<strong class="amber">Nucleus</strong></div>
+              <div class="row-num">03</div>
+              <div class="row-label">Frame<strong>Chaperone panel</strong></div>
               <div class="row-body">
-                <h4 class="amber">Individual reflection & transparency</h4>
-                <p>The private, AI-powered reflection conversation. The Question Engine asks — never validates, evaluates, or advises. Each person reflects on their direct experience of change. The data generated is entirely private at the individual level; anonymised aggregate signal flows upward to the Chaperone layer. <strong>This is the MVP layer.</strong></p>
+                <h4>Simulated, slide-up, the investor frame</h4>
+                <p>Accessed via a small "Chaperone view →" link at the bottom of the conversation screen. Participation stats, six team signals, and a priority action card that ties aggregate pattern to human intervention. This is what shifts investor perception from "reflection app" to "organisational intelligence infrastructure".</p>
               </div>
             </div>
           </div>
@@ -71,136 +66,155 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
     </div>
   </section>
 
-  <section class="section">
-    <div class="shell">
-      <div class="section-head">
-        <p class="label">The MVP</p>
-        <h2>Nucleus only.<br /><em>Everything else is post-validation.</em></h2>
-      </div>
-      <div class="section-body">
-        <div class="spacer"></div>
-        <div class="prose">
-          <p>The most important discipline in early-stage product development is knowing what not to build. For Interphase, the answer is clear: the MVP is the Nucleus layer, a working Chaperone dashboard for one practitioner, and the anonymised data flow between them.</p>
-
-          <div class="callout">
-            <h3>MVP scope</h3>
-            <h2>The Nucleus layer only — and nothing else.</h2>
-            <p>Individual reflection interface, AI question engine, and anonymised signal dashboard for a single Chaperone. Everything else is post-validation work.</p>
-            <ul>
-              <li>Mobile-first PWA (progressive web app) — iOS and Android</li>
-              <li>Real Claude API integration — multi-turn reflection via SSE streaming</li>
-              <li>Question Engine: questions only, no validation or advice, enforced at code level</li>
-              <li>Voice output: SpeechSynthesis with sentence-boundary detection, 400ms intentional pause</li>
-              <li>Blinking gold streaming cursor during AI response generation</li>
-              <li>Three-level data architecture: private / anonymised aggregate / interpreted leadership signal</li>
-              <li>Simulated Chaperone dashboard showing participation patterns and aggregate signal</li>
-              <li>Local-first data capture — reflections stored on-device, synced when connectivity allows</li>
-            </ul>
-          </div>
-
-          <p>The Metabolic layer, the Module Marketplace, the multi-lens architecture, the full Chaperone certification programme — these are all post-MVP. They depend on validated learning from the Nucleus layer working in the real world with real users. Building them before that validation is not ambition; it is noise.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="shell">
-      <div class="section-head">
-        <p class="label">Technology stack</p>
-        <h2>Built on <em>proven foundations</em></h2>
-      </div>
-      <div class="section-body">
-        <div class="spacer"></div>
-        <div class="prose">
-          <p>The stack is chosen for speed of MVP build, mobile-first delivery, real-time data, and configurability for the multi-lens architecture that follows. No bespoke infrastructure in the critical path.</p>
-
-          <div class="tiles">
-            <div class="tile"><h4>Frontend / Mobile</h4><div class="tech">React Native / Expo</div><p>Mobile-first PWA. Cross-platform iOS and Android from a single codebase.</p></div>
-            <div class="tile"><h4>Local Data</h4><div class="tech">WatermelonDB</div><p>High-performance local-first database for offline capture. Syncs when connectivity allows.</p></div>
-            <div class="tile"><h4>API Layer</h4><div class="tech">tRPC</div><p>End-to-end type-safe API. Eliminates a class of runtime errors between client and server.</p></div>
-            <div class="tile"><h4>Backend / Auth</h4><div class="tech">Supabase + PostgreSQL</div><p>Row Level Security for data isolation. Individual data is cryptographically separated at the database layer.</p></div>
-            <div class="tile"><h4>Chaperone Dashboard</h4><div class="tech">Next.js</div><p>Server-rendered dashboard. Practitioners see aggregate signal; no individual-level data accessible.</p></div>
-            <div class="tile"><h4>AI Engine</h4><div class="tech">Anthropic Claude API</div><p>SSE streaming for real-time conversation. Sentence-boundary detection triggers voice output before the full response arrives.</p></div>
-            <div class="tile"><h4>Voice</h4><div class="tech">Web SpeechSynthesis</div><p>Native browser API. Speech queue for sequential playback. No external voice service dependency in MVP.</p></div>
-            <div class="tile"><h4>Anonymisation</h4><div class="tech">Participation thresholds</div><p>Aggregate data visible only above configured threshold (minimum 5 contributors per signal). Individual attribution structurally impossible.</p></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
+  <!-- THE QUESTION ENGINE -->
   <section class="section">
     <div class="shell">
       <div class="section-head">
         <p class="label">The Question Engine</p>
-        <h2>What the AI does <em>and does not</em> do</h2>
+        <h2>Twelve rules,<br /><em>absolute.</em></h2>
       </div>
       <div class="section-body">
         <div class="spacer"></div>
         <div class="prose">
-          <p>The Question Engine is the core IP. The constraint is simple and absolute: the AI asks questions. It does not validate, evaluate, advise, or praise. This is enforced at the code level — the system prompt alone is not sufficient.</p>
+          <p>The system prompt defines what Interphase is at a philosophical level. It must be implemented exactly — not paraphrased, not "improved", not simplified.</p>
 
-          <div class="two-col">
-            <div class="tc-cell"><h4>Conversation style</h4><p>Short, spoken-natural phrasing. Questions are front-loaded — the interrogative word comes first. Maximum 1.5 line height. No academic or clinical register.</p></div>
-            <div class="tc-cell"><h4>What the AI never does</h4><p style="font-family:var(--mono); font-size:13px; line-height:1.7;">No validation ("great insight")<br />No advice ("you should…")<br />No evaluation ("that was good/bad")<br />No diagnosis ("this suggests you…")</p></div>
-            <div class="tc-cell"><h4>Dimensioning logic</h4><p>Questions track how many layers the person engages: personal / team / organisational / systemic. Calibration is invisible — the conversation always feels appropriately challenging.</p></div>
-            <div class="tc-cell"><h4>Differentiation logic</h4><p>Within each dimension, questions expand from low-differentiation ("how did it go?") to high-differentiation ("what interpretations of 'alignment' were present in the room?") as capacity develops.</p></div>
-            <div class="tc-cell"><h4>Streaming behaviour</h4><p style="font-family:var(--mono); font-size:13px; line-height:1.7;">SSE streaming from Claude API<br />Sentence boundary detection → SpeechSynthesis<br />400ms pause before first speech<br />Blinking gold cursor during generation</p></div>
-            <div class="tc-cell"><h4>Privacy constraint</h4><p>Individual reflections stored encrypted, client-side first. Aggregate signal generated server-side. No individual content passes to Chaperone layer under any condition.</p></div>
+          <div class="pull">
+            <blockquote>You are the Interphase reflection engine. Your only function is to ask questions. You never give answers, advice, feedback, validation, or analysis. You are a mirror. Your questions are the intervention.</blockquote>
+            <div class="attr">System prompt — first lines</div>
+          </div>
+
+          <div class="callout">
+            <h3>Twelve absolute rules</h3>
+            <h2>What the AI will <em>never</em> do.</h2>
+            <ul>
+              <li><strong>One question per message.</strong> Never two questions in one turn.</li>
+              <li><strong>Observation before interpretation.</strong> "What did you notice?" before "What do you think that means?"</li>
+              <li><strong>Specifics before generalisations.</strong> Concrete examples first. Abstract reflection earned, not assumed.</li>
+              <li><strong>No validation.</strong> Never "great", "interesting", "exactly", "I see", "that makes sense", or any evaluative phrase.</li>
+              <li><strong>No analysis.</strong> Do not tell someone what their experience means. Surface a pattern, ask what they notice.</li>
+              <li><strong>No advice.</strong> Never suggest what to do or how to think about something.</li>
+              <li><strong>Calibrate to what you receive.</strong> Short answers get simpler follow-up. Rich answers get deeper ones. Never outpace the person's reflective capacity.</li>
+              <li><strong>Learning, not performance.</strong> "What did you notice about how you showed up?" not "Did you handle that well?"</li>
+              <li><strong>Open new dimensions gently.</strong> "Let's shift slightly — tell me about a moment this week when something surprised you."</li>
+              <li><strong>Keep questions short.</strong> Twenty-five words or fewer where possible.</li>
+              <li><strong>Never start two consecutive questions with the same word.</strong></li>
+              <li><strong>Never use "feel" or "feelings".</strong> Ask about what people notice, observe, or experience instead.</li>
+            </ul>
+          </div>
+
+          <p><strong>The progression.</strong> Start with simple observational questions about the week. Deepen toward what they noticed about others, the room, the dynamics. Broaden toward patterns they're starting to see across weeks. Expand toward what this is telling them about themselves.</p>
+
+          <p><strong>Silence and short answers are data.</strong> Meet them where they are.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TECH STACK -->
+  <section class="section">
+    <div class="shell">
+      <div class="section-head">
+        <p class="label">Technical stack</p>
+        <h2>No build step.<br /><em>No framework.</em></h2>
+      </div>
+      <div class="section-body">
+        <div class="spacer"></div>
+        <div class="prose">
+          <p>The prototype is a single HTML file. Vanilla JavaScript. No React, no Vue, no build toolchain. The constraints are deliberate — they force the work into the interaction itself, not into the tooling that surrounds it.</p>
+
+          <div class="tiles">
+            <div class="tile"><h4>Platform</h4><div class="tech">Single-file PWA</div><p>One <code>interphase_prototype.html</code>. Installable to the iPhone home screen. Safe-area insets respected. 390×844 target, works from 375px up.</p></div>
+            <div class="tile"><h4>Runtime</h4><div class="tech">Vanilla JS</div><p>No framework, no transpiler. DOM APIs directly. The prototype must load and run with nothing beyond a browser and a font CDN.</p></div>
+            <div class="tile"><h4>AI</h4><div class="tech">Claude Sonnet 4</div><p>Called from the browser via <code>anthropic-dangerous-direct-browser-access</code>. API key entered by the user on first load, stored in <code>sessionStorage</code> only.</p></div>
+            <div class="tile"><h4>History</h4><div class="tech">Full array</div><p>Every turn appends to a <code>conversationHistory</code> array passed in full on each call. No summarisation. No truncation. The context <em>is</em> the conversation.</p></div>
+            <div class="tile"><h4>Typography</h4><div class="tech">EB Garamond + DM Mono</div><p>Display in EB Garamond on parchment — the tactile feel is what makes it not feel like another B2B SaaS tool.</p></div>
+            <div class="tile"><h4>Fallback</h4><div class="tech">Scripted path</div><p>If no API key is provided, the prototype runs a pre-scripted conversation with a typewriter effect. Recipients without API keys must still experience the product.</p></div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- CHAPERONE PANEL -->
   <section class="section">
     <div class="shell">
       <div class="section-head">
-        <p class="label">Build timeline</p>
-        <h2>From Nucleus <em>to Organism</em></h2>
+        <p class="label">The Chaperone panel</p>
+        <h2>What shifts investor <em>perception.</em></h2>
+      </div>
+      <div class="section-body">
+        <div class="spacer"></div>
+        <div class="prose">
+          <p>A slide-up panel covering 82% of screen height, ink background, parchment text. Three elements matter.</p>
+
+          <div class="mock">
+            <div class="mock-head">Chaperone view · Meridian Consulting · Anna K. · Week 8</div>
+            <div class="mock-grid">
+              <div class="mock-cell"><div class="mc-n">57%</div><div class="mc-l">Active this week</div></div>
+              <div class="mock-cell"><div class="mc-n">+8%</div><div class="mc-l">Trend vs last</div></div>
+              <div class="mock-cell"><div class="mc-n">Above</div><div class="mc-l">floor status</div></div>
+            </div>
+            <div class="mock-signal">
+              <div class="mock-signal-l">Priority this week</div>
+              <p>Finance team participation dropped 11% after the cost restructuring announcement. Pattern suggests trust barrier, not disengagement. Recommend: in-person session before next digital prompt cycle. No platform — team retrospective. Feed themes back manually.</p>
+            </div>
+            <div class="mock-foot">Illustrative — no individual attribution. Aggregate above threshold.</div>
+          </div>
+
+          <p><strong>The priority action card is the critical element.</strong> It ties aggregate signal to human intervention: the platform surfaces a pattern, the Chaperone interprets it, and the action is explicitly human — a team retrospective, off-platform, fed back manually. That is what distinguishes Interphase from a dashboard.</p>
+
+          <p>Six team signals below show relative participation across the organisation with a one-word label (Processing, Stuck, Resistant, Emerging) — these are not moods, they are how the Chaperone reads the aggregate.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NON-NEGOTIABLES -->
+  <section class="section">
+    <div class="shell">
+      <div class="section-head">
+        <p class="label">Non-negotiables</p>
+        <h2>What must never be <em>compromised.</em></h2>
       </div>
       <div class="section-body">
         <div class="spacer"></div>
         <div class="prose">
           <div class="rows">
             <div class="row">
-              <div class="row-num amber">01</div>
-              <div class="row-label">Now → Month 3<strong class="amber">Active phase</strong></div>
+              <div class="row-num">01</div>
+              <div class="row-label">Philosophy<strong>The system prompt</strong></div>
               <div class="row-body">
-                <h4>MVP — Nucleus + one Chaperone dashboard</h4>
-                <p>Individual reflection PWA with real Claude API, voice output, local-first data capture. Single Chaperone dashboard with simulated participation patterns. Design partner (OSCC) providing real-world reflection data and feedback on Question Engine calibration.</p>
+                <p>The AI must ask questions only. If it drifts toward advice, validation, or analysis, the prototype misrepresents the product's philosophy at its core. Test this before any demo.</p>
               </div>
             </div>
             <div class="row">
               <div class="row-num">02</div>
-              <div class="row-label">Month 3 → 6<strong>Validation</strong></div>
+              <div class="row-label">Trust<strong>Privacy language</strong></div>
               <div class="row-body">
-                <h4>Validated Nucleus + Chaperone certification V1</h4>
-                <p>Question Engine refined on real data. Three paid pilot clients. Chaperone certification programme launched. Revenue from platform subscriptions and first Chaperone session fees.</p>
+                <p>Card 2's privacy commitment is the trust foundation. Exact wording as specified. Nothing else on the screen is allowed to contradict it by implication.</p>
               </div>
             </div>
             <div class="row">
               <div class="row-num">03</div>
-              <div class="row-label">Month 6 → 12<strong>Cytoplasm</strong></div>
+              <div class="row-label">Signal<strong>Priority action card</strong></div>
               <div class="row-body">
-                <h4>Cytoplasm layer + Module Marketplace V1</h4>
-                <p>Formal Chaperone data-to-intervention workflow. First learning modules available for deployment. Revenue share model active across the practitioner network.</p>
+                <p>The single element that shifts investor perception from "reflection app" to "organisational intelligence infrastructure". It must be present and legible.</p>
               </div>
             </div>
             <div class="row">
               <div class="row-num">04</div>
-              <div class="row-label">Year 2<strong>Metabolic</strong></div>
+              <div class="row-label">Feel<strong>Typography</strong></div>
               <div class="row-body">
-                <h4>Metabolic layer + lens licensing</h4>
-                <p>Real-time module deployment triggered by organisational signal. First lens license agreement — OSCC or Soul.com. Multi-vertical configurability built into the core engine.</p>
+                <p>EB Garamond on parchment at the right sizes is what makes this feel different from every B2B SaaS tool investors have seen. Do not substitute.</p>
               </div>
             </div>
-          </div>
-
-          <div class="pull">
-            <blockquote>"The configurability for the multi-lens strategy must be built in from day one — not retrofitted. The AI interpretive layer, the Chaperone protocol, and the data schema must be modular."</blockquote>
-            <div class="attr">Interphase — Platform Architecture Requirement</div>
+            <div class="row">
+              <div class="row-num">05</div>
+              <div class="row-label">Access<strong>API key fallback</strong></div>
+              <div class="row-body">
+                <p>Most demo recipients will not have an API key. The simulated conversation must feel as considered and real as the live version. Test both paths.</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>

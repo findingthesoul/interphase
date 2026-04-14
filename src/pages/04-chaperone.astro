@@ -4,233 +4,212 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 ---
 
 <Base
-  title="04 · The Chaperone Perspective — Interphase"
+  title="04 · The Chaperone Question — Interphase"
   current="04 · Chaperone"
   prev={{ href: `${base}/03-product`, num: '03', title: 'Tech Stack & MVP' }}
   next={{ href: `${base}/05-organisation`, num: '05', title: 'The Organisation Perspective' }}
 >
+  <!-- COVER -->
   <section class="cover">
     <div class="shell">
       <p class="eyebrow cover-eyebrow">04 · Practitioner · Go-to-market</p>
-      <h1>The data lens<br />that makes<br /><em>expertise visible.</em></h1>
+      <h1>The Chaperone<br /><em>question.</em></h1>
       <p class="cover-sub">
-        What Interphase means for experienced practitioners — coaches, OD
-        consultants, change managers — who have spent years working without the
-        signal layer they always needed.
+        What the Chaperone actually is, what the platform replaces, and why
+        senior partnership is the real model.
       </p>
     </div>
   </section>
 
+  <!-- THREAD 01 -->
   <section class="section">
     <div class="shell">
       <div class="section-head">
-        <p class="label">The practitioner's problem</p>
-        <h2>Working blind<br /><em>in high-stakes terrain</em></h2>
+        <p class="label">Thread 01 · The core question</p>
+        <h2>How dependent should<br />Interphase be on <em>Chaperones?</em></h2>
       </div>
       <div class="section-body">
         <div class="spacer"></div>
         <div class="prose">
-          <p class="lead">Every experienced change practitioner knows the feeling: walking into an organisation during a transformation with nothing but interviews, surveys, and intuition.</p>
-          <p>Surveys lie — or rather, they tell you what people are willing to say publicly about their experience of change. Interviews are time-sampled and status-contaminated. Observation is expensive and invasive. The result is that even the most skilled practitioners are navigating with significant blind spots — and they know it.</p>
+          <p class="lead">The question isn't whether Chaperones are valuable. It's whether they are a structural dependency — or a phase.</p>
+
+          <p>Chaperones are a scaling constraint, a quality control problem, a margin compressor, and a dependency on human behaviour that can't be fully controlled. Every Chaperone is a potential brand risk. And the SDT argument actually supports reducing dependency on them — if the platform genuinely creates autonomy conditions, it may not need a human intermediary to interpret data and decide when to intervene.</p>
+
+          <p>But removing them entirely creates a different problem: C-suites won't buy ambient reflection infrastructure from a SaaS tool alone. They need a human relationship to trust the process. And the Chaperone is also the go-to-market channel — certified practitioners bringing their existing client relationships to the platform.</p>
 
           <div class="compare">
             <div class="compare-col">
-              <h3>Before Interphase</h3>
-              <div class="compare-item">Diagnosis relies on interviews, pulse surveys, and informal networks — all subject to social desirability bias</div>
-              <div class="compare-item">No continuous signal between formal check-ins — things shift invisibly between engagements</div>
-              <div class="compare-item">Intervention timing is calendar-driven, not readiness-driven</div>
-              <div class="compare-item">Junior consulting time spent on data gathering rather than interpretation</div>
-              <div class="compare-item">No longitudinal view of how individual capacity develops over time</div>
-              <div class="compare-item">Outcomes are difficult to attribute — what moved the needle?</div>
+              <h3>The case for reducing dependency</h3>
+              <div class="compare-item">Scaling constraint: every Chaperone is a bottleneck and a margin compressor</div>
+              <div class="compare-item">Quality risk: a poor practitioner undermines the entire model</div>
+              <div class="compare-item">SDT conditions, properly implemented, may make human intermediaries unnecessary over time</div>
+              <div class="compare-item">The platform should build organisational reflective capacity until it becomes self-sustaining</div>
             </div>
             <div class="compare-col us">
-              <h3>With Interphase</h3>
-              <div class="compare-item">Continuous, privately-generated reflection data — honest because it is structurally protected from social consequences</div>
-              <div class="compare-item">Real-time signal between engagements — the Chaperone dashboard shows shifts as they happen</div>
-              <div class="compare-item">Intervention is triggered by readiness, not by the project calendar</div>
-              <div class="compare-item">Data gathering is fully automated — senior time is reserved for interpretation and human contact</div>
-              <div class="compare-item">Longitudinal view of individual and collective reflective capacity development</div>
-              <div class="compare-item">Attribution is possible: signal before and after each intervention is visible</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="shell">
-      <div class="section-head">
-        <p class="label">The data layer</p>
-        <h2>What a Chaperone<br /><em>actually sees</em></h2>
-      </div>
-      <div class="section-body">
-        <div class="spacer"></div>
-        <div class="prose">
-          <p>The Chaperone never sees individual reflections. The privacy architecture is not a policy — it is a structural guarantee. What a Chaperone sees is the anonymised aggregate: patterns across the organisation's reflective data that are only visible because enough people have contributed that individual attribution is impossible.</p>
-
-          <div class="rows">
-            <div class="row">
-              <div class="row-num">L1</div>
-              <div class="row-label">Lowest level<strong>Individual only</strong></div>
-              <div class="row-body">
-                <h4>Complete reflection content</h4>
-                <p>Entirely private. Not accessible to Chaperones, leadership, or Interphase. The individual owns this entirely.</p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="row-num amber">L2</div>
-              <div class="row-label">Practitioner<strong class="amber">Chaperone layer</strong></div>
-              <div class="row-body">
-                <h4>Anonymised aggregate signal</h4>
-                <p>Where capacity is accumulating, where friction concentrates, which questions are surfacing most, participation patterns and gaps. No individual attribution possible. Visible only above participation threshold.</p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="row-num">L3</div>
-              <div class="row-label">Executive<strong>Leadership layer</strong></div>
-              <div class="row-body">
-                <h4>Interpreted recommendations</h4>
-                <p>What the data suggests about organisational readiness, what capacity-building intervention is indicated, what the Chaperone observed in their human sessions. No raw data; only interpreted guidance.</p>
-              </div>
-            </div>
-          </div>
-
-          <p>This architecture is not just an ethical requirement — it is what produces the honest data that makes the Chaperone's work meaningful. The only way to get genuine signal about what is actually happening in an organisation during transformation is to create a space where people feel genuinely safe to be honest. That safety is Interphase's most valuable asset.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="shell">
-      <div class="section-head">
-        <p class="label">The Chaperone workflow</p>
-        <h2>From signal<br /><em>to intervention</em></h2>
-      </div>
-      <div class="section-body">
-        <div class="spacer"></div>
-        <div class="prose">
-          <div class="rows">
-            <div class="row">
-              <div class="row-num">01</div>
-              <div class="row-label">Signal<strong>Read the dashboard</strong></div>
-              <div class="row-body">
-                <h4>Read the dashboard</h4>
-                <p>The Chaperone reviews the anonymised aggregate signal. Where is capacity accumulating? Where is it cycling without resolution? Which teams show gaps between participation patterns and reflective depth? What questions are surfacing repeatedly?</p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="row-num">02</div>
-              <div class="row-label">Interpretation<strong>Form a hypothesis</strong></div>
-              <div class="row-body">
-                <h4>Form an interpretive hypothesis</h4>
-                <p>The Chaperone applies their practitioner judgment to the data. The signal tells you what is happening; the Chaperone's expertise tells you why it might be happening and what it means for the transformation. This is the irreplaceable human layer.</p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="row-num">03</div>
-              <div class="row-label">Outreach<strong>Targeted contact</strong></div>
-              <div class="row-body">
-                <h4>Conduct targeted human outreach</h4>
-                <p>Based on the signal, the Chaperone reaches out — not to individuals whose data they have read, but to the functions or teams showing the relevant patterns. The data made the timing and targeting precise; the interaction itself is relational.</p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="row-num">04</div>
-              <div class="row-label">Feedback loop<strong>Back to data</strong></div>
-              <div class="row-body">
-                <h4>Feed the offline conversation back into data</h4>
-                <p>What the Chaperone learned in the human session is captured — not as individual attribution, but as contextual signal that enriches the aggregate. The platform learns. The next intervention is better calibrated than the last.</p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="row-num">05</div>
-              <div class="row-label">Module<strong>Deploy when ready</strong></div>
-              <div class="row-body">
-                <h4>Deploy a learning module (when indicated)</h4>
-                <p>If the signal and the human session both point toward a specific capacity gap — trust-building, structural navigation, ESG literacy — the Chaperone deploys the relevant module. It arrives for the relevant group at the moment they are metabolically ready for it.</p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="row-num">06</div>
-              <div class="row-label">Reporting<strong>Interpreted, not raw</strong></div>
-              <div class="row-body">
-                <h4>Report to leadership</h4>
-                <p>The Chaperone's guidance is interpretive: what is the organisational readiness level, what intervention is indicated, what is the expected trajectory. Leadership never sees the raw data. They see the Chaperone's professional judgment, informed by signal they could not otherwise access.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="shell">
-      <div class="section-head">
-        <p class="label">Commercial model</p>
-        <h2>Certified Chaperones<br /><em>as a go-to-market channel</em></h2>
-      </div>
-      <div class="section-body">
-        <div class="spacer"></div>
-        <div class="prose">
-          <p>For practitioners, Interphase does three things simultaneously: it makes their existing work more effective, it creates a new revenue stream from platform participation, and it gives them a category distinction that no competing practitioner without certification can claim.</p>
-
-          <div class="tiles">
-            <div class="tile"><h4>Annual certification</h4><div class="big">€2,400</div><p>Per Chaperone per year. Access to the data lens, dashboard, module library, and the Interphase practitioner community.</p></div>
-            <div class="tile"><h4>Session revenue share</h4><div class="big">30–40%</div><p>Interphase receives 30–40% of session fees generated through the platform. The Chaperone keeps the rest.</p></div>
-            <div class="tile"><h4>Module marketplace</h4><div class="big">€500–2.5k</div><p>Per module deployment. Chaperones earn a share for deploying Interphase modules and can contribute their own to the marketplace.</p></div>
-            <div class="tile"><h4>Network reach</h4><div class="big">40+</div><p>A network of 40 practitioners can each serve multiple organisations — generating platform ARR no direct sales team could match at the same cost.</p></div>
-          </div>
-
-          <p>The Chaperone network is Interphase's go-to-market engine. Each certified practitioner brings their existing client base to the platform — reducing customer acquisition cost while expanding the practitioner's service offering. The network grows as its value becomes demonstrable.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="shell">
-      <div class="section-head">
-        <p class="label">The Chaperone's horizon</p>
-        <h2>A role that <em>makes itself redundant</em></h2>
-      </div>
-      <div class="section-body">
-        <div class="spacer"></div>
-        <div class="prose">
-          <p>The Chaperone model is not a permanent structural dependency. It is a transitional role — consistent with Self-Determination Theory — that diminishes as organisations develop their own reflective capacity. The goal is not to create a perpetual consulting relationship; it is to build the internal capability that eventually replaces the need for external Chaperone intervention.</p>
-
-          <div class="rows">
-            <div class="row">
-              <div class="row-num">P1</div>
-              <div class="row-label">Entry<strong>Active Chaperone</strong></div>
-              <div class="row-body">
-                <h4>The organisation is new to structured reflection</h4>
-                <p>The Chaperone is heavily involved — reading signal, conducting frequent outreach, deploying modules, interpreting data for leadership. High Chaperone hours, high platform value.</p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="row-num">P2</div>
-              <div class="row-label">Development<strong>Coaching the coaches</strong></div>
-              <div class="row-body">
-                <h4>Internal champions emerge</h4>
-                <p>The Chaperone shifts from direct intervention to developing internal reflective capacity — training internal facilitators, consulting on signal interpretation, calibrating the Question Engine for the organisation's specific culture.</p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="row-num">P3</div>
-              <div class="row-label">Maturity<strong>Strategic advisor</strong></div>
-              <div class="row-body">
-                <h4>The organisation is largely self-sustaining</h4>
-                <p>The Chaperone's role becomes episodic — called in for major transformation events, providing external perspective on accumulated longitudinal data. The Organism layer. SDT-consistent autonomy achieved.</p>
-              </div>
+              <h3>The case for keeping them</h3>
+              <div class="compare-item">C-suite trust anchor — no one buys "AI reflection infrastructure" without a human relationship</div>
+              <div class="compare-item">Go-to-market channel: certified practitioners bring existing client relationships</div>
+              <div class="compare-item">Human presence that validates the data layer and creates relational safety at the organisational level</div>
+              <div class="compare-item">Platform alone cannot manufacture the trust the C-suite needs to commit</div>
             </div>
           </div>
 
           <div class="pull">
-            <blockquote>"Interphase replaces the junior consulting layer with infrastructure while elevating senior practitioners to their highest-value function: relational judgment and organisational reading. The story is about liberating senior partners, not displacing them."</blockquote>
-            <div class="attr">Interphase — Consultancy Positioning</div>
+            <blockquote>The Chaperone isn't a role. It's a phase — essential in early deployments while trust is being established, and gradually less necessary as the organisation develops its own reflective capacity.</blockquote>
+            <div class="attr">Resolution — the SDT-consistent answer</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- THREAD 02 -->
+  <section class="section">
+    <div class="shell">
+      <div class="section-head">
+        <p class="label">Thread 02 · The senior partner insight</p>
+        <h2>Is the Chaperone<br /><em>the senior partner?</em></h2>
+      </div>
+      <div class="section-body">
+        <div class="spacer"></div>
+        <div class="prose">
+          <p class="lead">AI is already hollowing out the junior layer in professional services. Interphase makes this explicit — and turns it into a value proposition.</p>
+
+          <p>The grunt work of consulting — data gathering, pattern recognition, report writing, synthesis — maps directly onto Interphase's Metabolic layer. The platform does it continuously, at scale, without billing hours. What remains irreplaceable is exactly what senior partners have and juniors are still developing.</p>
+
+          <div class="rows">
+            <div class="row">
+              <div class="row-num">01</div>
+              <div class="row-label">Human layer<strong>Senior partner</strong></div>
+              <div class="row-body">
+                <h4>The Chaperone — human presence, irreplaceable</h4>
+                <p>Capacity to hold complexity in a room. Relational authority. Reading an organisation's emotional texture. Knowing when to speak and when to wait. Judgment from having seen a hundred transformations fail in different ways.</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="row-num">02</div>
+              <div class="row-label">Infrastructure<strong>Interphase platform</strong></div>
+              <div class="row-body">
+                <h4>Replaces the junior layer</h4>
+                <p>Continuous data gathering. Pattern recognition across the organisation. Real-time synthesis. Anonymised signal generation. Everything that junior consultants bill for — done continuously, at infrastructure cost.</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="row-num">03</div>
+              <div class="row-label">Outcome<strong>Peak-value operation</strong></div>
+              <div class="row-body">
+                <h4>Senior practitioners operating at peak value</h4>
+                <p>Freed from supervising junior work. Armed with a data lens sharper than anything their methodology previously provided. Able to deploy judgment — their highest-value function — on demand.</p>
+              </div>
+            </div>
+          </div>
+
+          <p>This is not a threat to consultancies. It is a liberation of their most valuable asset — senior judgment — from the supervision overhead that currently consumes it.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- THREAD 03 -->
+  <section class="section">
+    <div class="shell">
+      <div class="section-head">
+        <p class="label">Thread 03 · The go-to-market reframe</p>
+        <h2>Consultancies as <em>allies,</em><br />not competitors.</h2>
+      </div>
+      <div class="section-body">
+        <div class="spacer"></div>
+        <div class="prose">
+          <p class="lead">Interphase does not threaten consultancies. It makes their senior people more powerful — and gives employees a reason to trust the process.</p>
+
+          <div class="callout">
+            <h3>Four reframes</h3>
+            <h2>Every named competitor <em>is a channel partner.</em></h2>
+            <ul>
+              <li><strong>Independence as trust substrate.</strong> Interphase's value to consultancies is precisely that it is independent. An external, certified platform that employees can trust — not because the consultancy says so, but because the structural design guarantees it. This resolves the perennial problem of change management feeling like a management tool in disguise.</li>
+              <li><strong>Chaperone certification as channel.</strong> Every certified senior practitioner brings their existing client base to the platform. The go-to-market is not cold outreach to HR directors — it is the professional services network that already has the C-suite relationships.</li>
+              <li><strong>Data lens as competitive advantage for the Chaperone.</strong> A senior practitioner using Interphase can see things about an organisation's transformation health that their competitors — working without the platform — simply cannot. Once a Chaperone has built their practice around Interphase's data layer, leaving is a significant capability loss.</li>
+              <li><strong>Named competitors removed.</strong> McKinsey, BCG, Prosci — these are potential Chaperone networks and channel partners, not threats. Naming them as competitors forecloses relationships that are commercially far more valuable.</li>
+            </ul>
+          </div>
+
+          <div class="pull">
+            <blockquote>You are not threatening consultancies. You are liberating their senior people from supervising junior work — and giving them a data lens that makes their judgment sharper than it has ever been.</blockquote>
+            <div class="attr">Commercial positioning — the reframe</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- THREAD 04 -->
+  <section class="section">
+    <div class="shell">
+      <div class="section-head">
+        <p class="label">Thread 04 · The independence argument</p>
+        <h2>Independence as<br /><em>structural guarantee.</em></h2>
+      </div>
+      <div class="section-body">
+        <div class="spacer"></div>
+        <div class="prose">
+          <p class="lead">The Chaperone is not the consultancy's tool. The Chaperone is a senior practitioner whose independence from the client organisation is precisely what makes the data trustworthy.</p>
+
+          <p>This is the resolution to the tension between anonymisation and C-suite confidence. The data isn't trustworthy because of consent mechanics or privacy architecture alone. It's trustworthy because the conditions that produce it — SDT-grounded, Chaperone-held, structurally independent — make honesty the path of least resistance for employees.</p>
+
+          <p>The argument for C-suites isn't ethical. It's empirical: <strong>intrinsic motivation produces honest data, honest data produces accurate organisational signal, accurate signal produces better decisions.</strong> The independence of the Chaperone and the platform is the guarantee that the signal hasn't been shaped by someone's agenda.</p>
+
+          <div class="compare">
+            <div class="compare-col">
+              <h3>What employees experience</h3>
+              <div class="compare-item">A space that is genuinely safe — not because someone says so, but because the structural design makes manipulation impossible</div>
+              <div class="compare-item">Independence isn't claimed. It's demonstrated through architecture.</div>
+              <div class="compare-item">The Chaperone is visibly external to the client hierarchy — not someone who could be leaned on to reveal individuals</div>
+              <div class="compare-item">The platform's data pipelines physically cannot reach the HR systems that carry consequences</div>
+            </div>
+            <div class="compare-col us">
+              <h3>What C-suites receive</h3>
+              <div class="compare-item">Data they can trust — not because they control it, but because the conditions that produced it were designed to eliminate the incentive to distort</div>
+              <div class="compare-item">Honest signal, not managed sentiment</div>
+              <div class="compare-item">Interpretive guidance from a senior practitioner, not a dashboard number they have to decode themselves</div>
+              <div class="compare-item">Early warning about capacity gaps before they become attrition or resistance events</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- THREAD 05 — Open questions -->
+  <section class="section">
+    <div class="shell">
+      <div class="section-head">
+        <p class="label">Thread 05 · Still to resolve</p>
+        <h2>Open <em>questions.</em></h2>
+      </div>
+      <div class="section-body">
+        <div class="spacer"></div>
+        <div class="prose">
+          <div class="qa">
+            <div class="qa-row">
+              <div class="qa-q">What does the Chaperone actually do that the platform couldn't eventually automate?</div>
+              <div class="qa-a">And at what stage does that human function become optional rather than essential? The answer determines whether the Chaperone model is a permanent feature or a transitional scaffold — and therefore whether Interphase's long-run gross margin looks more like SaaS or more like services.</div>
+            </div>
+            <div class="qa-row">
+              <div class="qa-q">How does Interphase demonstrate data quality to a C-suite before there is enough data history to prove it?</div>
+              <div class="qa-a">What is the trust-building mechanism in the first 90 days? Design partner context (OSCC) helps, but is not sufficient for cold C-suite conversations. The 90-day proof mechanism is a founding question.</div>
+            </div>
+            <div class="qa-row">
+              <div class="qa-q">If the Chaperone is a phase, what does "graduation" look like?</div>
+              <div class="qa-a">How does Interphase price the transition from Chaperone-dependent to self-sustaining? The commercial model must survive its own success — the platform making itself less necessary cannot also mean it makes itself unpaid.</div>
+            </div>
+            <div class="qa-row">
+              <div class="qa-q">How does Interphase certify Chaperones in a way that preserves their independence?</div>
+              <div class="qa-a">They must not be perceived as Interphase salespeople or management proxies. Certification has to carry enough weight to signal quality, without creating a structural allegiance to the platform that compromises the trust substrate.</div>
+            </div>
+            <div class="qa-row">
+              <div class="qa-q">What is the go-to-market entry point — direct to enterprise, or through the Chaperone network?</div>
+              <div class="qa-a">The answer shapes everything about the first 18 months. Direct-to-enterprise has longer sales cycles but captures more value per contract. Chaperone-network compounds the data moat faster but requires certification V1 before any of it scales.</div>
+            </div>
           </div>
         </div>
       </div>

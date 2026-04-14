@@ -4,109 +4,83 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 ---
 
 <Base
-  title="05 · The Organisation Perspective — Interphase"
+  title="05 · The Adoption Moat — Interphase"
   current="05 · Organisation"
-  prev={{ href: `${base}/04-chaperone`, num: '04', title: 'The Chaperone Perspective' }}
+  prev={{ href: `${base}/04-chaperone`, num: '04', title: 'The Chaperone Question' }}
 >
+  <!-- COVER -->
   <section class="cover">
     <div class="shell">
-      <p class="eyebrow cover-eyebrow">05 · Adoption · Trust · Leadership</p>
-      <h1>What the<br />organisation<br /><em>experiences,</em> sees,<br />and decides.</h1>
+      <p class="eyebrow cover-eyebrow">05 · Adoption · Trust · The moat</p>
+      <h1>The moat is<br /><em>that people use it.</em></h1>
       <p class="cover-sub">
-        How a transforming organisation adopts Interphase — the trust
-        architecture, what leadership actually sees, why non-participation is
-        signal, and how ROI is measured without mandate.
+        Every enterprise software company has the same problem: getting people
+        to actually use the thing. For Interphase the problem is sharper — and
+        the answer is the moat.
       </p>
     </div>
   </section>
 
+  <!-- THE MOAT -->
   <section class="section">
     <div class="shell">
       <div class="section-head">
-        <p class="label">The adoption challenge</p>
-        <h2>Adoption as <em>by-product,</em> not goal</h2>
+        <p class="label">The moat</p>
+        <h2>The defensibility isn't<br /><em>the technology.</em></h2>
       </div>
       <div class="section-body">
         <div class="spacer"></div>
         <div class="prose">
-          <p class="lead">Every platform that depends on honest human input faces the same foundational question: why would someone use this truthfully? For Interphase, the answer is not incentive design or mandate — it is structural trust.</p>
-          <p>The only way to get genuine signal about what is actually happening in an organisation during transformation is to create a space where people feel genuinely safe to be honest. The moment anyone suspects that their reflection could be traced back to them — used in a performance review, seen by their manager, weaponised in a restructuring — the data collapses into performance.</p>
+          <p class="lead">A competitor can clone the interface in a weekend. They can copy the biological metaphor, the Chaperone model, the four layers. They cannot copy five years of an organisation's change patterns, language, and learning texture.</p>
+
+          <p>That is the real moat. Not the AI. Not the architecture. Not the visual identity. The moat is the accumulated, richly contextualised data layer that exists only when people have been using the platform, honestly, for long enough for the picture to develop.</p>
+
+          <p>Which means the question "can Interphase defend its position against a well-resourced entrant" reduces to a single operational question: <strong>will employees actually use this honestly, and keep using it?</strong> Because if they do, the data layer compounds and nobody can catch up. And if they don't, there is no moat at all.</p>
 
           <div class="pull">
-            <blockquote>"We start with radical transparency, and let the quality of the experience prove the case. Trustworthiness is not a tactical tool — it is the foundation. Adoption is a by-product of genuine trust, not of mandate or persuasion."</blockquote>
-            <div class="attr">Interphase — Adoption Philosophy</div>
-          </div>
-
-          <p>This means Interphase's adoption model is the inverse of most enterprise software: it does not seek maximum participation through incentives, gamification, or top-down mandate. It seeks honest participation through structural guarantees. A smaller number of genuinely honest reflections produces better signal than a large number of performed ones.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="shell">
-      <div class="section-head">
-        <p class="label">The trust architecture</p>
-        <h2>Structural guarantees,<br /><em>not policy promises</em></h2>
-      </div>
-      <div class="section-body">
-        <div class="spacer"></div>
-        <div class="prose">
-          <p>The privacy model cannot be a legal disclaimer or a HR communications message. It must be a structural reality — something that is architecturally true, not just contractually promised.</p>
-
-          <div class="two-col">
-            <div class="tc-cell"><h4>Individual data sovereignty</h4><p>Every reflection belongs entirely to the individual who created it. No manager, HR professional, or Interphase employee can access individual content. Enforced at the database layer with Row Level Security — not just through policy.</p></div>
-            <div class="tc-cell"><h4>Participation thresholds</h4><p>Aggregate signal is only generated above a configured participation threshold — minimum five contributors per signal point. Below that, no signal is surfaced. Individual attribution is structurally impossible even in small teams.</p></div>
-            <div class="tc-cell"><h4>Transparent mechanics</h4><p>Every employee can see exactly what data is generated, at what level of aggregation, and who can see what. The transparency is not about showing the data — it is about showing the system.</p></div>
-            <div class="tc-cell"><h4>Right to exit</h4><p>Participation is always voluntary. Opting out has no consequence. Crucially, non-participation itself is understood as signal, not as gap. No one is nudged or incentivised.</p></div>
-            <div class="tc-cell"><h4>No performance cross-contamination</h4><p>Interphase data is structurally separated from HR systems, performance management, and any tool that carries performance consequences. The connection cannot be made — the data pipelines do not exist.</p></div>
-            <div class="tc-cell"><h4>Consent architecture</h4><p>Data is used only for what was consented to. Interphase cannot repurpose reflection data for commercial analytics or AI training without explicit, granular consent. The ethical commitment is the commercial moat.</p></div>
+            <blockquote>Adoption is not a growth metric. It is the moat itself.</blockquote>
+            <div class="attr">Interphase — Commercial logic</div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- WHY ADOPTION IS HARD -->
   <section class="section">
     <div class="shell">
       <div class="section-head">
-        <p class="label">The adoption journey</p>
-        <h2>How it enters<br /><em>and takes root</em></h2>
+        <p class="label">Why adoption is hard</p>
+        <h2>The three failure modes<br /><em>of enterprise software.</em></h2>
       </div>
       <div class="section-body">
         <div class="spacer"></div>
         <div class="prose">
+          <p>Enterprise software that depends on honest human input fails in three predictable ways. All three are structural, not motivational. And all three apply to Interphase unless specifically designed against.</p>
+
           <div class="rows">
             <div class="row">
               <div class="row-num">01</div>
-              <div class="row-label">Entry trigger<strong>A defined event</strong></div>
+              <div class="row-label">Failure 1<strong>The compliance tax</strong></div>
               <div class="row-body">
-                <h4>M&amp;A integration, ESG mandate, leadership succession, or digital rollout</h4>
-                <p>Interphase is introduced in the context of a named transformation — not as a general HR tool, but as infrastructure for a specific, high-stakes change. Leadership adopts because the transformation is real, the risk is known, and traditional consulting does not scale to their context.</p>
+                <h4>Reflection becomes an administrative act</h4>
+                <p>Every journal app, every feedback form, every engagement survey asks people to stop what they are doing, shift context, and perform documentation. Even a small tax, repeated, ends the practice. People don't resist reflection because they lack the desire to grow — they resist it because it feels like a tax.</p>
               </div>
             </div>
             <div class="row">
               <div class="row-num">02</div>
-              <div class="row-label">Consent<strong>Transparent launch</strong></div>
+              <div class="row-label">Failure 2<strong>Perceived surveillance</strong></div>
               <div class="row-body">
-                <h4>Leadership communicates the system clearly before inviting participation</h4>
-                <p>What Interphase is. What it captures. What it does not capture. Who can see what, at what level of aggregation. The launch communication is not a sales pitch — it is a structural explanation. People join because they understand what they are joining.</p>
+                <h4>The suspicion that someone is listening who shouldn't be</h4>
+                <p>The moment anyone suspects their reflection could be traced back — used in a performance review, seen by their manager, weaponised in a restructuring — the data collapses into performance. People say what they think they should say. The output is not reflection. It is theatre.</p>
               </div>
             </div>
             <div class="row">
               <div class="row-num">03</div>
-              <div class="row-label">Early phase<strong>Experience builds trust</strong></div>
+              <div class="row-label">Failure 3<strong>Extrinsic motivation</strong></div>
               <div class="row-body">
-                <h4>The first few reflections prove the promise</h4>
-                <p>The experience of using the platform — the quality of the questions, the absence of surveillance cues, the feeling of genuine privacy — does the work that no communication can. Trust is not built by promises; it is built by experience.</p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="row-num">04</div>
-              <div class="row-label">Momentum<strong>Intrinsic motivation</strong></div>
-              <div class="row-body">
-                <h4>People return because reflection is valuable to them personally</h4>
-                <p>The SDT flywheel activates: low-effort experience → growing competence as a reflector → increased autonomy and relational safety → intrinsic motivation to return → richer reflections. The person is no longer using Interphase because the organisation deployed it.</p>
+                <h4>Using incentives to drive use — which then corrupts the use</h4>
+                <p>The classic enterprise fix for low adoption is nudges, reminders, gamification, and completion metrics tied to manager dashboards. These solve the adoption number while destroying the signal. A platform with 90% coerced participation produces worse data than one with 40% honest participation.</p>
               </div>
             </div>
           </div>
@@ -115,10 +89,114 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
     </div>
   </section>
 
+  <!-- THE ANSWER: STRUCTURAL TRUST -->
   <section class="section">
     <div class="shell">
       <div class="section-head">
-        <p class="label">Non-participation as signal</p>
+        <p class="label">The answer</p>
+        <h2>Trust as <em>structure,</em><br />not as policy.</h2>
+      </div>
+      <div class="section-body">
+        <div class="spacer"></div>
+        <div class="prose">
+          <p class="lead">The only way to get genuine signal is to create a space where people feel genuinely safe to be honest. That safety cannot be a legal disclaimer. It has to be architecturally true.</p>
+
+          <div class="two-col">
+            <div class="tc-cell">
+              <h4>Individual data sovereignty</h4>
+              <p>Every reflection belongs entirely to the individual who created it. No manager, HR professional, or Interphase employee can access individual content. Enforced at the database layer with Row Level Security — not just through policy.</p>
+            </div>
+            <div class="tc-cell">
+              <h4>Participation thresholds</h4>
+              <p>Aggregate signal is generated only above a configured participation threshold — minimum five contributors per signal point. Below that, no signal is surfaced. Individual attribution is structurally impossible, even in small teams.</p>
+            </div>
+            <div class="tc-cell">
+              <h4>No performance cross-contamination</h4>
+              <p>The data pipelines that would connect Interphase to HR systems, performance management, or any tool carrying performance consequences simply do not exist. The connection can't be made — not because it is prohibited, but because the plumbing is not there.</p>
+            </div>
+            <div class="tc-cell">
+              <h4>Transparent mechanics</h4>
+              <p>Every employee can see exactly what data is generated, at what level of aggregation, and who can see what. The transparency is not about showing the data — it is about showing the system. Interphase does not hide how it works.</p>
+            </div>
+            <div class="tc-cell">
+              <h4>Right to exit, without penalty</h4>
+              <p>Participation is always voluntary. Opting out has no consequence. No nudges, no reminders, no incentives to participate. The decision is structurally honoured — and non-participation itself becomes signal, not gap.</p>
+            </div>
+            <div class="tc-cell">
+              <h4>Consent architecture</h4>
+              <p>Data is used only for what was consented to. Interphase cannot repurpose reflection data for commercial analytics, benchmarking, or AI training without explicit, granular consent. The ethical commitment is the commercial moat — it is what produces the honest data.</p>
+            </div>
+          </div>
+
+          <p>None of this is a marketing claim. All of it is enforced architecturally. The moment something has to be defended as "policy" rather than demonstrated in the code, the trust collapses — and with it, the data.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- THE SDT FLYWHEEL -->
+  <section class="section">
+    <div class="shell">
+      <div class="section-head">
+        <p class="label">The flywheel</p>
+        <h2>Adoption as <em>by-product,</em><br />not goal.</h2>
+      </div>
+      <div class="section-body">
+        <div class="spacer"></div>
+        <div class="prose">
+          <p class="lead">If you optimise for participation, you destroy the thing you are trying to produce. If you optimise for conditions, participation follows on its own.</p>
+
+          <p>Self-Determination Theory names the three conditions that produce intrinsic motivation: autonomy, competence, and relatedness. Every enterprise software adoption failure can be traced to one or more of these being violated. Interphase is designed to honour all three — and the result is a flywheel rather than a funnel.</p>
+
+          <div class="rows">
+            <div class="row">
+              <div class="row-num">1</div>
+              <div class="row-label">Start<strong>Low-effort experience</strong></div>
+              <div class="row-body">
+                <p>The interface arrives in a 15-minute window, asks a short, specific, non-evaluative question, and disappears. The friction tax is near zero.</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="row-num">2</div>
+              <div class="row-label">Step<strong>Growing competence</strong></div>
+              <div class="row-body">
+                <p>Over repeated interactions, the person becomes better at reflecting — more dimensions engaged, more differentiation within them. Noticing the shift is itself rewarding.</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="row-num">3</div>
+              <div class="row-label">Step<strong>Autonomy &amp; relational safety</strong></div>
+              <div class="row-body">
+                <p>The space is genuinely private and genuinely non-evaluative. There is no right answer to pursue. The person discovers they are not being judged — and the performance pressure evaporates.</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="row-num">4</div>
+              <div class="row-label">Step<strong>Intrinsic return</strong></div>
+              <div class="row-body">
+                <p>People come back not because the organisation deployed the platform, but because the reflection is valuable to them personally. This is the precise moment adoption flips from cost to asset.</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="row-num">5</div>
+              <div class="row-label">Loop<strong>Richer reflections</strong></div>
+              <div class="row-body">
+                <p>Deeper competence produces richer contributions. Richer contributions produce better aggregate signal. Better signal enables sharper Chaperone intervention — which compounds the trust and reinforces the loop.</p>
+              </div>
+            </div>
+          </div>
+
+          <p><strong>The operational consequence.</strong> Interphase's success metric is not "percentage of employees active this week". It is <em>voluntary return rate</em> — do people come back on their own, without being prompted. That metric cannot be gamed. And it is the closest thing to a leading indicator of the data layer's compounding value.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NON-PARTICIPATION AS SIGNAL -->
+  <section class="section">
+    <div class="shell">
+      <div class="section-head">
+        <p class="label">Non-participation</p>
         <h2>Absence is not a gap.<br /><em>It is data.</em></h2>
       </div>
       <div class="section-body">
@@ -126,102 +204,52 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
         <div class="prose">
           <div class="callout">
             <h3>The participation intelligence reframe</h3>
-            <h2>Non-participation is itself <em>meaningful information.</em></h2>
-            <p>Traditional enterprise software treats low adoption as a product failure to be corrected through nudges, reminders, and gamification. Interphase treats it differently.</p>
-            <p>A function that chooses not to participate is telling you something — about trust levels, about perceived safety, about their relationship with leadership, or about their experience of the transformation itself. That signal is as valuable as any reflection content. The Chaperone reads non-participation patterns with the same interpretive lens as participation data.</p>
-            <p>This reframe resolves the participation bias objection entirely: Interphase does not have a participation bias problem, because it has named non-participation as a feature of its signal architecture — not a flaw in its product design.</p>
+            <h2>Non-participation is <em>meaningful information.</em></h2>
+            <p>Traditional enterprise software treats low adoption as a product failure to be corrected through nudges, reminders, and gamification. Interphase treats it differently — because it has to.</p>
+            <p>A team that chooses not to participate is telling you something about its relationship with leadership, with the transformation, with psychological safety, with trust. That signal is as valuable as any reflection content. The Chaperone reads non-participation patterns with the same interpretive lens as participation data.</p>
+            <p>This reframe resolves the "participation bias" objection completely. Interphase does not have a participation problem. It has a participation <em>intelligence</em> — and non-participation is a named feature of the signal architecture, not a flaw in the product.</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- WHAT LEADERSHIP SEES -->
   <section class="section">
     <div class="shell">
       <div class="section-head">
         <p class="label">What leadership sees</p>
-        <h2>Interpreted guidance,<br /><em>not raw data</em></h2>
+        <h2>Interpreted guidance,<br /><em>not raw data.</em></h2>
       </div>
       <div class="section-body">
         <div class="spacer"></div>
         <div class="prose">
-          <p>Leadership never sees individual reflections. They do not see aggregate scores on a dashboard. What they see is the Chaperone's interpreted guidance — professional judgment informed by signal that was not previously available to any practitioner.</p>
+          <p>Leadership never sees individual reflections. They do not see aggregate scores on a dashboard either. What they see is the Chaperone's interpreted guidance — professional judgment informed by signal that was not previously available to any practitioner.</p>
 
           <div class="mock">
-            <div class="mock-head">Chaperone guidance — illustrative · month 3 of M&amp;A integration</div>
+            <div class="mock-head">Chaperone guidance · illustrative · month 3 of M&amp;A integration</div>
             <div class="mock-grid">
-              <div class="mock-cell">
-                <div class="mc-n"><em>74</em>%</div>
-                <div class="mc-l">Participation — finance & ops</div>
-              </div>
-              <div class="mock-cell">
-                <div class="mc-n"><em>41</em>%</div>
-                <div class="mc-l">Participation — commercial</div>
-              </div>
-              <div class="mock-cell">
-                <div class="mc-n"><em>↑</em>3</div>
-                <div class="mc-l">Avg. dimensions engaged vs week 1</div>
-              </div>
+              <div class="mock-cell"><div class="mc-n">74%</div><div class="mc-l">Participation — finance &amp; ops</div></div>
+              <div class="mock-cell"><div class="mc-n">41%</div><div class="mc-l">Participation — commercial</div></div>
+              <div class="mock-cell"><div class="mc-n">↑3</div><div class="mc-l">Dimensions engaged vs. week 1</div></div>
             </div>
             <div class="mock-signal">
               <div class="mock-signal-l">Chaperone interpretation</div>
-              <p>"Finance and Ops are processing the integration actively — reflective depth is increasing and the data shows emerging capacity around structural navigation. The commercial team's low participation is significant: this correlates with two themes surfaced in my session last week — uncertainty about role definition and low perceived safety to express concerns upward. Recommend a targeted session with commercial leads before the next integration milestone."</p>
+              <p>"Finance and Ops are processing the integration actively — reflective depth is increasing and capacity is emerging around structural navigation. The commercial team's low participation is significant: it correlates with two themes from my session last week — uncertainty about role definition and low perceived safety to express concerns upward. Recommend a targeted session with commercial leads before the next integration milestone."</p>
             </div>
-            <div class="mock-foot">Illustrative — no individual attribution. Participation data aggregated above threshold.</div>
+            <div class="mock-foot">Illustrative — no individual attribution. Aggregate above threshold.</div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="section">
-    <div class="shell">
-      <div class="section-head">
-        <p class="label">Return on investment</p>
-        <h2>What gets measured,<br /><em>what gets moved</em></h2>
-      </div>
-      <div class="section-body">
-        <div class="spacer"></div>
-        <div class="prose">
-          <p>The ROI from Interphase is not speculative. It operates at the intersection of three documented cost centres where transformations generate their most expensive failures.</p>
-
-          <div class="tiles">
-            <div class="tile">
-              <h4>Voluntary turnover</h4>
-              <div class="tech">50–200% of annual salary</div>
-              <p>Replacement cost per leaver. Interphase's early signal identifies disengagement before it becomes departure.</p>
-            </div>
-            <div class="tile">
-              <h4>Resistance reduction</h4>
-              <div class="tech">72% of failures: resistance gaps</div>
-              <p>Resistance is an information and safety problem. Interphase gives people a safe place to process friction and leaders early signal of where it concentrates.</p>
-            </div>
-            <div class="tile">
-              <h4>Timeline compression</h4>
-              <div class="tech">5.3× more likely to succeed</div>
-              <p>Organisations that complete their Interphase reach genuine transformation faster — capacity was built before the visible change, not during it.</p>
-            </div>
-            <div class="tile">
-              <h4>Consulting displacement</h4>
-              <div class="tech">10–50× cost efficiency</div>
-              <p>500-person org at €12/seat/month = €72k ARR. McKinsey for the same transformation: €500k–2M. Replaces the data layer, not the strategic relationship.</p>
-            </div>
-          </div>
-
-          <div class="pull">
-            <blockquote>"Companies that invest in culture change are 5.3× more likely to achieve transformation success than those that invest in technology alone."</blockquote>
-            <div class="attr">McKinsey & BCG Research, 2024</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
+  <!-- OBJECTIONS -->
   <section class="section">
     <div class="shell">
       <div class="section-head">
         <p class="label">Common objections</p>
-        <h2>Questions from<br /><em>the C-suite</em></h2>
+        <h2>Questions <em>from the C-suite.</em></h2>
       </div>
       <div class="section-body">
         <div class="spacer"></div>
@@ -229,7 +257,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
           <div class="qa">
             <div class="qa-row">
               <div class="qa-q">Won't people just say what they think we want to hear?</div>
-              <div class="qa-a">Only if they believe someone is listening who has power over them. The structural privacy guarantee — enforced at the database layer, not through policy — removes the social calculus from the reflection. The Question Engine's non-evaluative discipline further reduces performance pressure: there is no right answer to pursue. People quickly discover that the space is genuinely private and genuinely non-judgmental. The quality of data that emerges is categorically different from survey data.</div>
+              <div class="qa-a">Only if they believe someone is listening who has power over them. The structural privacy guarantee — enforced at the database layer, not through policy — removes the social calculus from the reflection. The Question Engine's non-evaluative discipline further reduces performance pressure: there is no right answer to pursue. People quickly discover the space is genuinely private and genuinely non-judgmental. The quality of data that emerges is categorically different from survey data.</div>
             </div>
             <div class="qa-row">
               <div class="qa-q">What if adoption is low?</div>
@@ -240,9 +268,32 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
               <div class="qa-a">Engagement surveys measure sentiment at a moment in time. They ask people to evaluate their experience publicly. They produce data that is episodic, static, and subject to social desirability bias. Interphase generates continuous, longitudinal, privately-authored reflection that builds capacity rather than measuring it. The output is not a score — it is an organisational learning trajectory.</div>
             </div>
             <div class="qa-row">
-              <div class="qa-q">How do we know this is working?</div>
-              <div class="qa-a">Three concurrent outcome signals: platform participation trends (are people returning voluntarily, reflecting intrinsic motivation), reflective depth metrics (are individuals engaging more dimensions over time, reflecting capacity growth), and transformation outcomes (burnout rates, voluntary turnover, resistance indicators, transformation timeline adherence). The Chaperone's interpreted guidance ties platform signal to these measurable business outcomes.</div>
+              <div class="qa-q">How do we know the moat is real?</div>
+              <div class="qa-a">Three concurrent signals compound the moat over time: voluntary return rate (an organisation's people coming back on their own), reflective depth (the same people engaging more dimensions across weeks), and attribution to outcomes (burnout, churn, resistance, transformation timeline adherence — measured against a pre-deployment baseline). Each signal is independently useful. Together they form a picture of culture-specific learning texture that no competitor, no matter how well-resourced, can reconstruct from the outside.</div>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CLOSING -->
+  <section class="section">
+    <div class="shell">
+      <div class="section-head">
+        <p class="label">The commercial consequence</p>
+        <h2>Trust is the <em>commercial bet.</em></h2>
+      </div>
+      <div class="section-body">
+        <div class="spacer"></div>
+        <div class="prose">
+          <p>Most enterprise software treats ethics as a cost centre — a compliance overhead grudgingly accepted to reach the market. Interphase inverts this: the ethical commitment <em>is</em> the commercial strategy. The structural trust architecture is not a tax on growth, it is the engine of growth — because it is the only thing that makes the data layer real.</p>
+
+          <p>Which means the pitch to C-suites is not a moral argument. It is an empirical one: <strong>intrinsic motivation produces honest data, honest data produces accurate organisational signal, accurate signal produces better decisions.</strong> And the organisation that runs on honest signal reaches transformation completion faster, with lower attrition, and with compounding capacity to do it again.</p>
+
+          <div class="pull">
+            <blockquote>The moat is that people use it. The only way to make that true is to build the conditions in which honest use is the path of least resistance.</blockquote>
+            <div class="attr">Interphase — The adoption argument</div>
           </div>
         </div>
       </div>
