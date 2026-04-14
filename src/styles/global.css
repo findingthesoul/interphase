@@ -598,19 +598,23 @@ td .num {
 }
 .callout ul { list-style: none; margin-top: 24px; border-top: 1px solid var(--rule); }
 .callout li {
-  padding: 14px 0;
+  position: relative;
+  padding: 14px 0 14px 32px;
   border-bottom: 1px solid var(--rule-soft);
   font-size: 15px;
+  line-height: 1.6;
   color: var(--ink-soft);
-  display: grid;
-  grid-template-columns: 24px 1fr;
-  gap: 12px;
 }
 .callout li::before {
   content: '→';
+  position: absolute;
+  left: 0;
+  top: 14px;
   color: var(--ink);
   font-family: var(--mono);
+  line-height: 1.6;
 }
+.callout li strong { color: var(--ink); }
 
 /* phase pill rail */
 .phase-rail {
